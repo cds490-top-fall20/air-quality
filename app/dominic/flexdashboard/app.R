@@ -6,72 +6,13 @@ suppressPackageStartupMessages(library(leaflet))
 suppressPackageStartupMessages(library(sf))
 suppressPackageStartupMessages(library(reshape2))
 suppressPackageStartupMessages(library(leafpop))
+suppressPackageStartupMessages(library(readr))
 
 #########################################################
 # data aggregation
 #########################################################
 shape <- tigris::counties(state = "VA", class = "sf")
-County_Transportation_Profiles <- read_csv("data/County_Transportation_Profiles.csv")
-sota_fips <- read_csv("data/sota_fips.csv")
-#read_csv("nei_virginia_highway.csv")
-#read_csv("nei_virginia_offhighway.csv")
-
-shape$GEOID <- as.numeric(shape$GEOID)
-
-shape <- select(
-    shape,
-    STATEFP,
-    COUNTYFP,
-    GEOID,
-    NAMELSAD,
-    COUNTYNS,
-    geometry
-)
-
-Transit <- County_Transportation_Profiles %>%
-    rename(
-        GEOID = `County FIPS`
-    )
-
-Transit$GEOID <- as.numeric(Transit$GEOID)
-
-Transit <- select(
-    Transit, 
-    GEOID, 
-    `Number of workers from other counties who commute to work in the county`,
-    `Number of resident workers who commute to work in other counties`,
-    `Number of resident workers who commute within county`,
-    `Number of residents`
-)
-
-y <- left_join(shape,Transit, by = "GEOID")
-
-SOTA_data <- sota_fips %>% 
-    rename(
-        GEOID = County_FIPS
-    )
-
-SOTA <- left_join(y, SOTA_data, by = "GEOID")
-
-#nei_virginia_highway$GEOID <- with(nei_virginia_highway, paste0(STATE_FIPS,COUNTY_FIPS))
-
-#nei_virginia_offhighway$GEOID <- with(nei_virginia_offhighway, paste0(STATE_FIPS,COUNTY_FIPS))
-
-full_data <- SOTA %>%
-    rename(
-        commute_within = `Number of resident workers who commute within county`,
-        commute_into = `Number of workers from other counties who commute to work in the county`,
-        commute_out = `Number of resident workers who commute to work in other counties`,
-        num_residents = `Number of residents`
-    )
-
-full_data <- mutate(
-    full_data,
-    smoker_ratio = `Ever Smoked`/`Total Population`,
-    pediatric_asthma_ratio = `Pediatric Asthma sufferers`/`Total Population`,
-    adult_asthma_ratio = `Adult Asthma sufferers`/`Total Population`
-)
-
+County_Transportation_Profiles <- read_rds("data/counties_mapping_data_simplified.rds")
 
 # Define UI 
 ui <- dashboardPage(
