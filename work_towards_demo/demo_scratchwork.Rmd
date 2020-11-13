@@ -1,0 +1,111 @@
+---
+title: "Flex_Maps"
+author: "Brian Cash"
+date: "11/10/2020"
+output: html_document
+runtime: shiny
+---
+
+
+```{r}
+library(tidyverse)
+library(shiny)
+library(leaflet)
+library(sf)
+library(reshape2)
+library(leafpop)
+shape <- tigris::counties(state = "VA", class = "sf")
+County_Transportation_Profiles <- read_csv("County_Transportation_Profiles.csv")
+sota_fips <- read_csv("sota_fips.csv")
+```
+
+
+```{r}
+shape$GEOID <- as.numeric(shape$GEOID)
+
+shape <- select(
+  shape,
+  STATEFP,
+  COUNTYFP,
+  GEOID,
+  NAMELSAD,
+  COUNTYNS,
+  geometry
+)
+
+Transit <- County_Transportation_Profiles %>%
+  rename(
+    GEOID = `County FIPS`
+  )
+
+Transit$GEOID <- as.numeric(Transit$GEOID)
+
+Transit <- select(
+  Transit, 
+  GEOID, 
+  `Number of workers from other counties who commute to work in the county`,
+  `Number of resident workers who commute to work in other counties`,
+  `Number of resident workers who commute within county`,
+  `Number of residents`
+)
+
+y <- left_join(shape,Transit, by = "GEOID")
+
+SOTA_data <- sota_fips %>% 
+  rename(
+    GEOID = County_FIPS
+  )
+
+SOTA <- left_join(y, SOTA_data, by = "GEOID")
+
+#nei_virginia_highway$GEOID <- with(nei_virginia_highway, paste0(STATE_FIPS,COUNTY_FIPS))
+
+#nei_virginia_offhighway$GEOID <- with(nei_virginia_offhighway, paste0(STATE_FIPS,COUNTY_FIPS))
+
+half_data <- SOTA %>%
+  rename(
+    commute_within = `Number of resident workers who commute within county`,
+    commute_into = `Number of workers from other counties who commute to work in the county`,
+    commute_out = `Number of resident workers who commute to work in other counties`,
+    num_residents = `Number of residents`
+  )
+
+half_data <- mutate(
+  half_data,
+  smoker_ratio = `Ever Smoked`/`Total Population`,
+  pediatric_asthma_ratio = `Pediatric Asthma sufferers`/`Total Population`,
+  adult_asthma_ratio = `Adult Asthma sufferers`/`Total Population`
+)
+
+################################################################################################
+
+hubs <- hub_info%>%
+  rename(
+    GEOID = County_FIPS
+  )
+
+#hubs$`Non-Commercial -Civil Public Use Airports and Seaplane base`
+#hubs$`Non-Commercial -Other Aerodromes`
+#hubs$`Primary and Commercial Airports`
+#hubs$`Route miles of freight railroad`
+#hubs$`Route miles of passenger railroad and rail transit`
+#hubs$`Total Marinas`
+#hubs$`Total Docks`
+
+hubs <- select(
+  hubs,
+  GEOID,
+  `Non-Commercial -Civil Public Use Airports and Seaplane base`,
+  `Non-Commercial -Other Aerodromes`,
+  `Primary and Commercial Airports`,
+  `Total Marinas`,
+  `Total Docks`,
+  `Route miles of freight railroad`,
+  `Route miles of passenger railroad and rail transit`
+)
+
+hubs$GEOID <- as.numeric(hubs$GEOID)
+
+full_data <- left_join(half_data, hubs, by = "GEOID")
+```
+

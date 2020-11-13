@@ -1,0 +1,932 @@
+TIER,COUNTY,GEOID,POLLUTANT,POLLUTANT TYPE,EMISSIONS,UNIT OF MEASURE
+Highway Vehicles,Fairfax,51059,Carbon Monoxide,CAP,47582.35686,TON
+Highway Vehicles,Virginia Beach city,51810,Carbon Monoxide,CAP,24596.82736,TON
+Highway Vehicles,Henrico,51087,Carbon Monoxide,CAP,22650.12137,TON
+Highway Vehicles,Chesterfield,51041,Carbon Monoxide,CAP,21957.47221,TON
+Highway Vehicles,Chesapeake city,51550,Carbon Monoxide,CAP,18821.42652,TON
+Highway Vehicles,Prince William,51153,Carbon Monoxide,CAP,18602.45939,TON
+Highway Vehicles,Norfolk city,51710,Carbon Monoxide,CAP,14914.85742,TON
+Highway Vehicles,Richmond city,51760,Carbon Monoxide,CAP,13776.34451,TON
+Highway Vehicles,Loudoun,51107,Carbon Monoxide,CAP,13748.01241,TON
+Highway Vehicles,Newport News city,51700,Carbon Monoxide,CAP,11846.42796,TON
+Highway Vehicles,Spotsylvania,51177,Carbon Monoxide,CAP,11053.62825,TON
+Highway Vehicles,Augusta,51015,Carbon Monoxide,CAP,10945.15842,TON
+Highway Vehicles,Albemarle,51003,Carbon Monoxide,CAP,9931.80817,TON
+Highway Vehicles,Hampton city,51650,Carbon Monoxide,CAP,9241.762141,TON
+Highway Vehicles,Fauquier,51061,Carbon Monoxide,CAP,9103.43933,TON
+Highway Vehicles,Rockingham,51165,Carbon Monoxide,CAP,8898.937571,TON
+Highway Vehicles,Frederick,51069,Carbon Monoxide,CAP,8661.27979,TON
+Highway Vehicles,Suffolk city,51800,Carbon Monoxide,CAP,8403.96572,TON
+Highway Vehicles,Roanoke city,51770,Carbon Monoxide,CAP,7888.497968,TON
+Highway Vehicles,Montgomery,51121,Carbon Monoxide,CAP,7545.5429,TON
+Highway Vehicles,Stafford,51179,Carbon Monoxide,CAP,7508.831296,TON
+Highway Vehicles,Roanoke,51161,Carbon Monoxide,CAP,7496.636521,TON
+Highway Vehicles,Hanover,51085,Carbon Monoxide,CAP,7484.884718,TON
+Highway Vehicles,Caroline,51033,Carbon Monoxide,CAP,7385.304454,TON
+Highway Vehicles,Arlington,51013,Carbon Monoxide,CAP,7210.536301,TON
+Highway Vehicles,Shenandoah,51171,Carbon Monoxide,CAP,7157.766937,TON
+Highway Vehicles,Bedford,51019,Carbon Monoxide,CAP,6766.778679,TON
+Highway Vehicles,Wythe,51197,Carbon Monoxide,CAP,6038.810528,TON
+Highway Vehicles,Fairfax,51059,Nitrogen Oxides,CAP,5929.289081,TON
+Highway Vehicles,Lynchburg city,51680,Carbon Monoxide,CAP,5846.16726,TON
+Highway Vehicles,Pittsylvania,51143,Carbon Monoxide,CAP,5782.052054,TON
+Highway Vehicles,Henry,51089,Carbon Monoxide,CAP,5671.602062,TON
+Highway Vehicles,Botetourt,51023,Carbon Monoxide,CAP,5670.910985,TON
+Highway Vehicles,Washington,51191,Carbon Monoxide,CAP,5527.563574,TON
+Highway Vehicles,Rockbridge,51163,Carbon Monoxide,CAP,5493.947672,TON
+Highway Vehicles,Campbell,51031,Carbon Monoxide,CAP,5313.136528,TON
+Highway Vehicles,Franklin,51067,Carbon Monoxide,CAP,5189.447802,TON
+Highway Vehicles,James city,51095,Carbon Monoxide,CAP,5055.813407,TON
+Highway Vehicles,Louisa,51109,Carbon Monoxide,CAP,4970.42924,TON
+Highway Vehicles,York,51199,Carbon Monoxide,CAP,4848.472662,TON
+Highway Vehicles,Goochland,51075,Carbon Monoxide,CAP,4741.431017,TON
+Highway Vehicles,Carroll,51035,Carbon Monoxide,CAP,4590.810287,TON
+Highway Vehicles,New Kent,51127,Carbon Monoxide,CAP,4503.226357,TON
+Highway Vehicles,Mecklenburg,51117,Carbon Monoxide,CAP,4431.63677,TON
+Highway Vehicles,Warren,51187,Carbon Monoxide,CAP,4425.733345,TON
+Highway Vehicles,Portsmouth city,51740,Carbon Monoxide,CAP,4419.033075,TON
+Highway Vehicles,Alexandria city,51510,Carbon Monoxide,CAP,4372.362891,TON
+Highway Vehicles,Pulaski,51155,Carbon Monoxide,CAP,4222.818578,TON
+Highway Vehicles,Dinwiddie,51053,Carbon Monoxide,CAP,4056.451391,TON
+Highway Vehicles,Isle of Wight,51093,Carbon Monoxide,CAP,4047.939837,TON
+Highway Vehicles,Culpeper,51047,Carbon Monoxide,CAP,4041.699329,TON
+Highway Vehicles,Halifax,51083,Carbon Monoxide,CAP,3950.244608,TON
+Highway Vehicles,Fairfax,51059,Volatile Organic Compounds,CAP,3666.690738,TON
+Highway Vehicles,Accomack,51001,Carbon Monoxide,CAP,3638.037883,TON
+Highway Vehicles,Smyth,51173,Carbon Monoxide,CAP,3557.774479,TON
+Highway Vehicles,Gloucester,51073,Carbon Monoxide,CAP,3530.398218,TON
+Highway Vehicles,Prince George,51149,Carbon Monoxide,CAP,3514.298009,TON
+Highway Vehicles,Amherst,51009,Carbon Monoxide,CAP,3419.438361,TON
+Highway Vehicles,Danville city,51590,Carbon Monoxide,CAP,3323.063923,TON
+Highway Vehicles,Henrico,51087,Nitrogen Oxides,CAP,3080.137681,TON
+Highway Vehicles,Tazewell,51185,Carbon Monoxide,CAP,3063.078458,TON
+Highway Vehicles,Chesterfield,51041,Nitrogen Oxides,CAP,3046.555988,TON
+Highway Vehicles,Sussex,51183,Carbon Monoxide,CAP,2945.380229,TON
+Highway Vehicles,Wise,51195,Carbon Monoxide,CAP,2920.334207,TON
+Highway Vehicles,Virginia Beach city,51810,Nitrogen Oxides,CAP,2887.510308,TON
+Highway Vehicles,Orange,51137,Carbon Monoxide,CAP,2881.541779,TON
+Highway Vehicles,Powhatan,51145,Carbon Monoxide,CAP,2864.250353,TON
+Highway Vehicles,Harrisonburg city,51660,Carbon Monoxide,CAP,2761.018946,TON
+Highway Vehicles,Petersburg city,51730,Carbon Monoxide,CAP,2735.424848,TON
+Highway Vehicles,Brunswick,51025,Carbon Monoxide,CAP,2726.768191,TON
+Highway Vehicles,Prince William,51153,Nitrogen Oxides,CAP,2619.429905,TON
+Highway Vehicles,Russell,51167,Carbon Monoxide,CAP,2615.140413,TON
+Highway Vehicles,Southampton,51175,Carbon Monoxide,CAP,2586.700389,TON
+Highway Vehicles,Virginia Beach city,51810,Volatile Organic Compounds,CAP,2473.190949,TON
+Highway Vehicles,Fredericksburg city,51630,Carbon Monoxide,CAP,2472.236313,TON
+Highway Vehicles,Chesapeake city,51550,Nitrogen Oxides,CAP,2460.431881,TON
+Highway Vehicles,Augusta,51015,Nitrogen Oxides,CAP,2456.768109,TON
+Highway Vehicles,Greensville,51081,Carbon Monoxide,CAP,2439.708444,TON
+Highway Vehicles,Charlottesville city,51540,Carbon Monoxide,CAP,2364.113686,TON
+Highway Vehicles,Scott,51169,Carbon Monoxide,CAP,2324.765134,TON
+Highway Vehicles,Alleghany,51005,Carbon Monoxide,CAP,2274.506681,TON
+Highway Vehicles,Page,51139,Carbon Monoxide,CAP,2255.103615,TON
+Highway Vehicles,King George,51099,Carbon Monoxide,CAP,2243.556007,TON
+Highway Vehicles,Prince Edward,51147,Carbon Monoxide,CAP,2177.814172,TON
+Highway Vehicles,Clarke,51043,Carbon Monoxide,CAP,2137.321816,TON
+Highway Vehicles,Chesterfield,51041,Volatile Organic Compounds,CAP,2093.955478,TON
+Highway Vehicles,Bland,51021,Carbon Monoxide,CAP,2088.639031,TON
+Highway Vehicles,Nelson,51125,Carbon Monoxide,CAP,2069.06325,TON
+Highway Vehicles,Henrico,51087,Volatile Organic Compounds,CAP,2017.654983,TON
+Highway Vehicles,Buchanan,51027,Carbon Monoxide,CAP,1990.771382,TON
+Highway Vehicles,Northampton,51131,Carbon Monoxide,CAP,1986.747491,TON
+Highway Vehicles,Richmond city,51760,Nitrogen Oxides,CAP,1893.330719,TON
+Highway Vehicles,Salem city,51775,Carbon Monoxide,CAP,1866.410298,TON
+Highway Vehicles,Patrick,51141,Carbon Monoxide,CAP,1839.542672,TON
+Highway Vehicles,Fluvanna,51065,Carbon Monoxide,CAP,1839.074799,TON
+Highway Vehicles,Norfolk city,51710,Nitrogen Oxides,CAP,1833.621438,TON
+Highway Vehicles,Rockingham,51165,Nitrogen Oxides,CAP,1784.423297,TON
+Highway Vehicles,Shenandoah,51171,Nitrogen Oxides,CAP,1783.683329,TON
+Highway Vehicles,Frederick,51069,Nitrogen Oxides,CAP,1759.166901,TON
+Highway Vehicles,Lee,51105,Carbon Monoxide,CAP,1723.865933,TON
+Highway Vehicles,Greene,51079,Carbon Monoxide,CAP,1676.935016,TON
+Highway Vehicles,Spotsylvania,51177,Nitrogen Oxides,CAP,1676.816808,TON
+Highway Vehicles,Loudoun,51107,Nitrogen Oxides,CAP,1676.677189,TON
+Highway Vehicles,Giles,51071,Carbon Monoxide,CAP,1675.579935,TON
+Highway Vehicles,Madison,51113,Carbon Monoxide,CAP,1670.854345,TON
+Highway Vehicles,Fauquier,51061,Nitrogen Oxides,CAP,1658.668483,TON
+Highway Vehicles,Wythe,51197,Nitrogen Oxides,CAP,1646.734232,TON
+Highway Vehicles,Nottoway,51135,Carbon Monoxide,CAP,1644.511134,TON
+Highway Vehicles,Albemarle,51003,Nitrogen Oxides,CAP,1630.600398,TON
+Highway Vehicles,Buckingham,51029,Carbon Monoxide,CAP,1611.523811,TON
+Highway Vehicles,Bristol city,51520,Carbon Monoxide,CAP,1605.478844,TON
+Highway Vehicles,Waynesboro city,51820,Carbon Monoxide,CAP,1580.643233,TON
+Highway Vehicles,Rockbridge,51163,Nitrogen Oxides,CAP,1578.135488,TON
+Highway Vehicles,Montgomery,51121,Nitrogen Oxides,CAP,1564.378073,TON
+Highway Vehicles,Floyd,51063,Carbon Monoxide,CAP,1548.863734,TON
+Highway Vehicles,Amelia,51007,Carbon Monoxide,CAP,1548.46889,TON
+Highway Vehicles,Caroline,51033,Nitrogen Oxides,CAP,1537.350867,TON
+Highway Vehicles,Staunton city,51790,Carbon Monoxide,CAP,1512.681877,TON
+Highway Vehicles,Appomattox,51011,Carbon Monoxide,CAP,1510.543059,TON
+Highway Vehicles,Prince William,51153,Volatile Organic Compounds,CAP,1503.72488,TON
+Highway Vehicles,Colonial Heights city,51570,Carbon Monoxide,CAP,1502.498856,TON
+Highway Vehicles,Winchester city,51840,Carbon Monoxide,CAP,1498.903232,TON
+Highway Vehicles,Newport News city,51700,Nitrogen Oxides,CAP,1478.24638,TON
+Highway Vehicles,Westmoreland,51193,Carbon Monoxide,CAP,1456.403885,TON
+Highway Vehicles,Chesapeake city,51550,Volatile Organic Compounds,CAP,1448.437134,TON
+Highway Vehicles,Botetourt,51023,Nitrogen Oxides,CAP,1443.258871,TON
+Highway Vehicles,Manassas city,51683,Carbon Monoxide,CAP,1436.818434,TON
+Highway Vehicles,Suffolk city,51800,Nitrogen Oxides,CAP,1409.496547,TON
+Highway Vehicles,King William,51101,Carbon Monoxide,CAP,1404.762451,TON
+Highway Vehicles,Charlotte,51037,Carbon Monoxide,CAP,1380.280639,TON
+Highway Vehicles,Stafford,51179,Nitrogen Oxides,CAP,1315.158535,TON
+Highway Vehicles,Roanoke,51161,Nitrogen Oxides,CAP,1293.958037,TON
+Highway Vehicles,Essex,51057,Carbon Monoxide,CAP,1293.495657,TON
+Highway Vehicles,Richmond city,51760,Volatile Organic Compounds,CAP,1269.273745,TON
+Highway Vehicles,Loudoun,51107,Volatile Organic Compounds,CAP,1263.453262,TON
+Highway Vehicles,Carroll,51035,Nitrogen Oxides,CAP,1223.419494,TON
+Highway Vehicles,Grayson,51077,Carbon Monoxide,CAP,1211.823924,TON
+Highway Vehicles,Washington,51191,Nitrogen Oxides,CAP,1195.05589,TON
+Highway Vehicles,Middlesex,51119,Carbon Monoxide,CAP,1193.306958,TON
+Highway Vehicles,Norfolk city,51710,Volatile Organic Compounds,CAP,1180.953124,TON
+Highway Vehicles,Hampton city,51650,Nitrogen Oxides,CAP,1178.963711,TON
+Highway Vehicles,Northumberland,51133,Carbon Monoxide,CAP,1167.239808,TON
+Highway Vehicles,Fairfax city,51600,Carbon Monoxide,CAP,1142.53972,TON
+Highway Vehicles,Dickenson,51051,Carbon Monoxide,CAP,1110.789206,TON
+Highway Vehicles,Roanoke city,51770,Nitrogen Oxides,CAP,1103.151382,TON
+Highway Vehicles,Williamsburg city,51830,Carbon Monoxide,CAP,1099.090822,TON
+Highway Vehicles,Lunenburg,51111,Carbon Monoxide,CAP,1098.750952,TON
+Highway Vehicles,Hopewell city,51670,Carbon Monoxide,CAP,1083.596752,TON
+Highway Vehicles,Lancaster,51103,Carbon Monoxide,CAP,1072.08329,TON
+Highway Vehicles,Hanover,51085,Nitrogen Oxides,CAP,1061.076071,TON
+Highway Vehicles,King and Queen,51097,Carbon Monoxide,CAP,1044.721422,TON
+Highway Vehicles,Richmond,51159,Carbon Monoxide,CAP,1038.865378,TON
+Highway Vehicles,Bedford,51019,Nitrogen Oxides,CAP,1016.868859,TON
+Highway Vehicles,Newport News city,51700,Volatile Organic Compounds,CAP,987.2399989,TON
+Highway Vehicles,Pittsylvania,51143,Nitrogen Oxides,CAP,981.5414276,TON
+Highway Vehicles,Spotsylvania,51177,Volatile Organic Compounds,CAP,976.4795995,TON
+Highway Vehicles,Augusta,51015,Volatile Organic Compounds,CAP,972.6757043,TON
+Highway Vehicles,Pulaski,51155,Nitrogen Oxides,CAP,928.5805064,TON
+Highway Vehicles,Cumberland,51049,Carbon Monoxide,CAP,923.576865,TON
+Highway Vehicles,Henry,51089,Nitrogen Oxides,CAP,915.3207585,TON
+Highway Vehicles,Martinsville city,51690,Carbon Monoxide,CAP,906.0590196,TON
+Highway Vehicles,Mecklenburg,51117,Nitrogen Oxides,CAP,902.3890197,TON
+Highway Vehicles,Roanoke city,51770,Volatile Organic Compounds,CAP,900.1804977,TON
+Highway Vehicles,Rockingham,51165,Volatile Organic Compounds,CAP,889.8483527,TON
+Highway Vehicles,Campbell,51031,Nitrogen Oxides,CAP,876.7487031,TON
+Highway Vehicles,Franklin,51067,Nitrogen Oxides,CAP,867.785973,TON
+Highway Vehicles,Goochland,51075,Nitrogen Oxides,CAP,856.9214799,TON
+Highway Vehicles,Louisa,51109,Nitrogen Oxides,CAP,853.1931091,TON
+Highway Vehicles,Rappahannock,51157,Carbon Monoxide,CAP,850.7048275,TON
+Highway Vehicles,Albemarle,51003,Volatile Organic Compounds,CAP,847.7186755,TON
+Highway Vehicles,Arlington,51013,Nitrogen Oxides,CAP,834.3367245,TON
+Highway Vehicles,Lynchburg city,51680,Nitrogen Oxides,CAP,813.15164,TON
+Highway Vehicles,New Kent,51127,Nitrogen Oxides,CAP,811.5385448,TON
+Highway Vehicles,Dinwiddie,51053,Nitrogen Oxides,CAP,809.3815352,TON
+Highway Vehicles,Warren,51187,Nitrogen Oxides,CAP,798.073209,TON
+Highway Vehicles,Bedford,51019,Volatile Organic Compounds,CAP,776.9204931,TON
+Highway Vehicles,Radford city,51750,Carbon Monoxide,CAP,763.6779949,TON
+Highway Vehicles,Frederick,51069,Volatile Organic Compounds,CAP,758.2479889,TON
+Highway Vehicles,Fauquier,51061,Volatile Organic Compounds,CAP,745.4303984,TON
+Highway Vehicles,Smyth,51173,Nitrogen Oxides,CAP,740.2598021,TON
+Highway Vehicles,Hampton city,51650,Volatile Organic Compounds,CAP,739.9954869,TON
+Highway Vehicles,Prince George,51149,Nitrogen Oxides,CAP,720.8789202,TON
+Highway Vehicles,Roanoke,51161,Volatile Organic Compounds,CAP,715.3561237,TON
+Highway Vehicles,Charles city,51036,Carbon Monoxide,CAP,709.2517183,TON
+Highway Vehicles,Hanover,51085,Volatile Organic Compounds,CAP,704.591878,TON
+Highway Vehicles,Mathews,51115,Carbon Monoxide,CAP,699.525661,TON
+Highway Vehicles,James city,51095,Nitrogen Oxides,CAP,679.8059343,TON
+Highway Vehicles,Halifax,51083,Nitrogen Oxides,CAP,677.3988542,TON
+Highway Vehicles,Sussex,51183,Nitrogen Oxides,CAP,667.6405575,TON
+Highway Vehicles,Montgomery,51121,Volatile Organic Compounds,CAP,663.5030261,TON
+Highway Vehicles,Brunswick,51025,Nitrogen Oxides,CAP,646.1720083,TON
+Highway Vehicles,Suffolk city,51800,Volatile Organic Compounds,CAP,633.1993095,TON
+Highway Vehicles,Emporia city,51595,Carbon Monoxide,CAP,627.2067645,TON
+Highway Vehicles,York,51199,Nitrogen Oxides,CAP,622.5460194,TON
+Highway Vehicles,Arlington,51013,Volatile Organic Compounds,CAP,622.322716,TON
+Highway Vehicles,Isle of Wight,51093,Nitrogen Oxides,CAP,621.7667137,TON
+Highway Vehicles,Pittsylvania,51143,Volatile Organic Compounds,CAP,618.5313069,TON
+Highway Vehicles,Culpeper,51047,Nitrogen Oxides,CAP,617.5151339,TON
+Highway Vehicles,Henry,51089,Volatile Organic Compounds,CAP,610.1891238,TON
+Highway Vehicles,Surry,51181,Carbon Monoxide,CAP,601.5117347,TON
+Highway Vehicles,Accomack,51001,Nitrogen Oxides,CAP,599.8553688,TON
+Highway Vehicles,Southampton,51175,Nitrogen Oxides,CAP,594.3673442,TON
+Highway Vehicles,Shenandoah,51171,Volatile Organic Compounds,CAP,585.8670967,TON
+Highway Vehicles,Stafford,51179,Volatile Organic Compounds,CAP,584.6577275,TON
+Highway Vehicles,Lynchburg city,51680,Volatile Organic Compounds,CAP,578.747661,TON
+Highway Vehicles,Amherst,51009,Nitrogen Oxides,CAP,574.3298237,TON
+Highway Vehicles,Poquoson city,51735,Carbon Monoxide,CAP,568.6943814,TON
+Highway Vehicles,Franklin,51067,Volatile Organic Compounds,CAP,561.7228168,TON
+Highway Vehicles,Greensville,51081,Nitrogen Oxides,CAP,561.2658372,TON
+Highway Vehicles,Portsmouth city,51740,Nitrogen Oxides,CAP,558.7403031,TON
+Highway Vehicles,Campbell,51031,Volatile Organic Compounds,CAP,558.3922133,TON
+Highway Vehicles,Bland,51021,Nitrogen Oxides,CAP,550.0786054,TON
+Highway Vehicles,Bath,51017,Carbon Monoxide,CAP,532.9625353,TON
+Highway Vehicles,Galax city,51640,Carbon Monoxide,CAP,525.7355735,TON
+Highway Vehicles,Alleghany,51005,Nitrogen Oxides,CAP,525.4069353,TON
+Highway Vehicles,Gloucester,51073,Nitrogen Oxides,CAP,514.0240466,TON
+Highway Vehicles,Harrisonburg city,51660,Nitrogen Oxides,CAP,512.9731666,TON
+Highway Vehicles,Danville city,51590,Nitrogen Oxides,CAP,511.8610016,TON
+Highway Vehicles,Falls Church city,51610,Carbon Monoxide,CAP,499.8332738,TON
+Highway Vehicles,Fairfax,51059,PM10 Primary (Filt + Cond),CAP,492.7236343,TON
+Highway Vehicles,Caroline,51033,Volatile Organic Compounds,CAP,491.4874521,TON
+Highway Vehicles,Washington,51191,Volatile Organic Compounds,CAP,487.5620946,TON
+Highway Vehicles,Botetourt,51023,Volatile Organic Compounds,CAP,482.4477945,TON
+Highway Vehicles,Alexandria city,51510,Nitrogen Oxides,CAP,476.6619742,TON
+Highway Vehicles,Craig,51045,Carbon Monoxide,CAP,473.0297403,TON
+Highway Vehicles,Petersburg city,51730,Nitrogen Oxides,CAP,467.9062077,TON
+Highway Vehicles,Portsmouth city,51740,Volatile Organic Compounds,CAP,452.7163575,TON
+Highway Vehicles,Powhatan,51145,Nitrogen Oxides,CAP,451.3757915,TON
+Highway Vehicles,Wythe,51197,Volatile Organic Compounds,CAP,448.9135808,TON
+Highway Vehicles,Wise,51195,Nitrogen Oxides,CAP,444.4156224,TON
+Highway Vehicles,Tazewell,51185,Nitrogen Oxides,CAP,439.9007116,TON
+Highway Vehicles,Halifax,51083,Volatile Organic Compounds,CAP,438.6807702,TON
+Highway Vehicles,Orange,51137,Nitrogen Oxides,CAP,438.3350922,TON
+Highway Vehicles,Alexandria city,51510,Volatile Organic Compounds,CAP,431.6552058,TON
+Highway Vehicles,Russell,51167,Nitrogen Oxides,CAP,430.1617156,TON
+Highway Vehicles,Warren,51187,Volatile Organic Compounds,CAP,430.0667601,TON
+Highway Vehicles,Isle of Wight,51093,Volatile Organic Compounds,CAP,426.4396582,TON
+Highway Vehicles,Louisa,51109,Volatile Organic Compounds,CAP,420.1435735,TON
+Highway Vehicles,Fredericksburg city,51630,Nitrogen Oxides,CAP,417.3903216,TON
+Highway Vehicles,Manassas Park city,51685,Carbon Monoxide,CAP,416.6466921,TON
+Highway Vehicles,Franklin city,51620,Carbon Monoxide,CAP,413.0715936,TON
+Highway Vehicles,Covington city,51580,Carbon Monoxide,CAP,409.2291518,TON
+Highway Vehicles,York,51199,Volatile Organic Compounds,CAP,405.9817974,TON
+Highway Vehicles,Culpeper,51047,Volatile Organic Compounds,CAP,396.9687415,TON
+Highway Vehicles,Clarke,51043,Nitrogen Oxides,CAP,396.9303969,TON
+Highway Vehicles,James city,51095,Volatile Organic Compounds,CAP,392.8544793,TON
+Highway Vehicles,Gloucester,51073,Volatile Organic Compounds,CAP,392.3693927,TON
+Highway Vehicles,Nelson,51125,Nitrogen Oxides,CAP,389.1113259,TON
+Highway Vehicles,Carroll,51035,Volatile Organic Compounds,CAP,387.2745025,TON
+Highway Vehicles,Rockbridge,51163,Volatile Organic Compounds,CAP,386.398846,TON
+Highway Vehicles,Pulaski,51155,Volatile Organic Compounds,CAP,384.1044843,TON
+Highway Vehicles,Prince Edward,51147,Nitrogen Oxides,CAP,383.3042463,TON
+Highway Vehicles,Mecklenburg,51117,Volatile Organic Compounds,CAP,375.0586796,TON
+Highway Vehicles,Norton city,51720,Carbon Monoxide,CAP,373.4430969,TON
+Highway Vehicles,Scott,51169,Nitrogen Oxides,CAP,365.1978417,TON
+Highway Vehicles,Northampton,51131,Nitrogen Oxides,CAP,360.775066,TON
+Highway Vehicles,Danville city,51590,Volatile Organic Compounds,CAP,352.8922888,TON
+Highway Vehicles,King George,51099,Nitrogen Oxides,CAP,352.6591455,TON
+Highway Vehicles,Bristol city,51520,Nitrogen Oxides,CAP,351.7391322,TON
+Highway Vehicles,Accomack,51001,Volatile Organic Compounds,CAP,347.304912,TON
+Highway Vehicles,Dinwiddie,51053,Volatile Organic Compounds,CAP,346.0319228,TON
+Highway Vehicles,Buena Vista city,51530,Carbon Monoxide,CAP,343.4736241,TON
+Highway Vehicles,Highland,51091,Carbon Monoxide,CAP,338.7817743,TON
+Highway Vehicles,Amherst,51009,Volatile Organic Compounds,CAP,337.6869116,TON
+Highway Vehicles,Prince George,51149,Volatile Organic Compounds,CAP,335.8062623,TON
+Highway Vehicles,Page,51139,Nitrogen Oxides,CAP,330.7838276,TON
+Highway Vehicles,Orange,51137,Volatile Organic Compounds,CAP,321.4385723,TON
+Highway Vehicles,Goochland,51075,Volatile Organic Compounds,CAP,320.6308021,TON
+Highway Vehicles,Tazewell,51185,Volatile Organic Compounds,CAP,315.2376394,TON
+Highway Vehicles,Powhatan,51145,Volatile Organic Compounds,CAP,314.3739781,TON
+Highway Vehicles,Smyth,51173,Volatile Organic Compounds,CAP,307.101621,TON
+Highway Vehicles,Buchanan,51027,Nitrogen Oxides,CAP,300.6462342,TON
+Highway Vehicles,Giles,51071,Nitrogen Oxides,CAP,299.6449335,TON
+Highway Vehicles,Patrick,51141,Nitrogen Oxides,CAP,296.003301,TON
+Highway Vehicles,Nottoway,51135,Nitrogen Oxides,CAP,294.4192436,TON
+Highway Vehicles,Fluvanna,51065,Nitrogen Oxides,CAP,279.9880911,TON
+Highway Vehicles,New Kent,51127,Volatile Organic Compounds,CAP,278.8626012,TON
+Highway Vehicles,Harrisonburg city,51660,Volatile Organic Compounds,CAP,277.0517031,TON
+Highway Vehicles,Charlottesville city,51540,Nitrogen Oxides,CAP,275.5316094,TON
+Highway Vehicles,Fairfax,51059,Ammonia,CAP,275.4743415,TON
+Highway Vehicles,Madison,51113,Nitrogen Oxides,CAP,273.7237098,TON
+Highway Vehicles,Wise,51195,Volatile Organic Compounds,CAP,273.1146743,TON
+Highway Vehicles,Buckingham,51029,Nitrogen Oxides,CAP,273.0191212,TON
+Highway Vehicles,Lee,51105,Nitrogen Oxides,CAP,270.2317892,TON
+Highway Vehicles,Page,51139,Volatile Organic Compounds,CAP,267.9866485,TON
+Highway Vehicles,Russell,51167,Volatile Organic Compounds,CAP,266.8335032,TON
+Highway Vehicles,Charlottesville city,51540,Volatile Organic Compounds,CAP,260.9984336,TON
+Highway Vehicles,Amelia,51007,Nitrogen Oxides,CAP,257.0021654,TON
+Highway Vehicles,Charlotte,51037,Nitrogen Oxides,CAP,256.7822035,TON
+Highway Vehicles,Appomattox,51011,Nitrogen Oxides,CAP,251.4376411,TON
+Highway Vehicles,Petersburg city,51730,Volatile Organic Compounds,CAP,251.204318,TON
+Highway Vehicles,Salem city,51775,Nitrogen Oxides,CAP,249.8246669,TON
+Highway Vehicles,Greene,51079,Nitrogen Oxides,CAP,245.401783,TON
+Highway Vehicles,Fredericksburg city,51630,Volatile Organic Compounds,CAP,243.565356,TON
+Highway Vehicles,King William,51101,Nitrogen Oxides,CAP,234.2454844,TON
+Highway Vehicles,Waynesboro city,51820,Nitrogen Oxides,CAP,228.1559163,TON
+Highway Vehicles,Floyd,51063,Nitrogen Oxides,CAP,227.2606411,TON
+Highway Vehicles,Scott,51169,Volatile Organic Compounds,CAP,226.690834,TON
+Highway Vehicles,Fluvanna,51065,Volatile Organic Compounds,CAP,225.563148,TON
+Highway Vehicles,Lexington city,51678,Carbon Monoxide,CAP,223.2623508,TON
+Highway Vehicles,Southampton,51175,Volatile Organic Compounds,CAP,221.7156547,TON
+Highway Vehicles,Westmoreland,51193,Nitrogen Oxides,CAP,215.6373072,TON
+Highway Vehicles,Patrick,51141,Volatile Organic Compounds,CAP,215.2896857,TON
+Highway Vehicles,Colonial Heights city,51570,Nitrogen Oxides,CAP,214.4218085,TON
+Highway Vehicles,Henrico,51087,PM10 Primary (Filt + Cond),CAP,212.625078,TON
+Highway Vehicles,Essex,51057,Nitrogen Oxides,CAP,212.5666294,TON
+Highway Vehicles,Salem city,51775,Volatile Organic Compounds,CAP,211.4678039,TON
+Highway Vehicles,Brunswick,51025,Volatile Organic Compounds,CAP,209.9411044,TON
+Highway Vehicles,Buchanan,51027,Volatile Organic Compounds,CAP,209.2814955,TON
+Highway Vehicles,King George,51099,Volatile Organic Compounds,CAP,207.9944923,TON
+Highway Vehicles,Clarke,51043,Volatile Organic Compounds,CAP,201.857274,TON
+Highway Vehicles,Prince Edward,51147,Volatile Organic Compounds,CAP,199.8322488,TON
+Highway Vehicles,Fairfax,51059,PM2.5 Primary (Filt + Cond),CAP,198.50484,TON
+Highway Vehicles,Virginia Beach city,51810,PM10 Primary (Filt + Cond),CAP,198.4363297,TON
+Highway Vehicles,Alleghany,51005,Volatile Organic Compounds,CAP,195.6340329,TON
+Highway Vehicles,Nelson,51125,Volatile Organic Compounds,CAP,194.5006829,TON
+Highway Vehicles,Sussex,51183,Volatile Organic Compounds,CAP,194.4429883,TON
+Highway Vehicles,Staunton city,51790,Volatile Organic Compounds,CAP,193.6772549,TON
+Highway Vehicles,Staunton city,51790,Nitrogen Oxides,CAP,191.6521797,TON
+Highway Vehicles,Greene,51079,Volatile Organic Compounds,CAP,189.9927173,TON
+Highway Vehicles,Prince William,51153,PM10 Primary (Filt + Cond),CAP,188.8622172,TON
+Highway Vehicles,Grayson,51077,Nitrogen Oxides,CAP,187.3305955,TON
+Highway Vehicles,Floyd,51063,Volatile Organic Compounds,CAP,185.8156446,TON
+Highway Vehicles,King and Queen,51097,Nitrogen Oxides,CAP,183.4791113,TON
+Highway Vehicles,Lee,51105,Volatile Organic Compounds,CAP,181.175388,TON
+Highway Vehicles,Waynesboro city,51820,Volatile Organic Compounds,CAP,181.0176842,TON
+Highway Vehicles,Buckingham,51029,Volatile Organic Compounds,CAP,179.2315794,TON
+Highway Vehicles,Lunenburg,51111,Nitrogen Oxides,CAP,176.5865244,TON
+Highway Vehicles,Chesterfield,51041,PM10 Primary (Filt + Cond),CAP,176.1980719,TON
+Highway Vehicles,Winchester city,51840,Nitrogen Oxides,CAP,176.0321188,TON
+Highway Vehicles,Dickenson,51051,Nitrogen Oxides,CAP,174.8444575,TON
+Highway Vehicles,Middlesex,51119,Nitrogen Oxides,CAP,172.8258203,TON
+Highway Vehicles,Westmoreland,51193,Volatile Organic Compounds,CAP,172.698885,TON
+Highway Vehicles,Winchester city,51840,Volatile Organic Compounds,CAP,172.2286115,TON
+Highway Vehicles,Giles,51071,Volatile Organic Compounds,CAP,170.9951048,TON
+Highway Vehicles,Manassas city,51683,Nitrogen Oxides,CAP,170.9595423,TON
+Highway Vehicles,Manassas city,51683,Volatile Organic Compounds,CAP,170.8144717,TON
+Highway Vehicles,Northumberland,51133,Nitrogen Oxides,CAP,166.5105909,TON
+Highway Vehicles,King William,51101,Volatile Organic Compounds,CAP,163.0469646,TON
+Highway Vehicles,Richmond,51159,Nitrogen Oxides,CAP,160.9913033,TON
+Highway Vehicles,Northampton,51131,Volatile Organic Compounds,CAP,160.0722411,TON
+Highway Vehicles,Appomattox,51011,Volatile Organic Compounds,CAP,160.0067269,TON
+Highway Vehicles,Richmond city,51760,PM10 Primary (Filt + Cond),CAP,159.8908902,TON
+Highway Vehicles,Loudoun,51107,PM10 Primary (Filt + Cond),CAP,159.2903497,TON
+Highway Vehicles,Madison,51113,Volatile Organic Compounds,CAP,158.2860698,TON
+Highway Vehicles,Hopewell city,51670,Nitrogen Oxides,CAP,157.7675139,TON
+Highway Vehicles,Greensville,51081,Volatile Organic Compounds,CAP,157.2247028,TON
+Highway Vehicles,Amelia,51007,Volatile Organic Compounds,CAP,155.4661297,TON
+Highway Vehicles,Lancaster,51103,Nitrogen Oxides,CAP,154.5541179,TON
+Highway Vehicles,Nottoway,51135,Volatile Organic Compounds,CAP,151.0796919,TON
+Highway Vehicles,Charlotte,51037,Volatile Organic Compounds,CAP,148.914303,TON
+Highway Vehicles,Hopewell city,51670,Volatile Organic Compounds,CAP,147.7392499,TON
+Highway Vehicles,Cumberland,51049,Nitrogen Oxides,CAP,145.0778435,TON
+Highway Vehicles,Grayson,51077,Volatile Organic Compounds,CAP,135.6893522,TON
+Highway Vehicles,Northumberland,51133,Volatile Organic Compounds,CAP,135.0455852,TON
+Highway Vehicles,Bland,51021,Volatile Organic Compounds,CAP,134.2847986,TON
+Highway Vehicles,Bristol city,51520,Volatile Organic Compounds,CAP,133.3744309,TON
+Highway Vehicles,Lunenburg,51111,Volatile Organic Compounds,CAP,128.5670661,TON
+Highway Vehicles,Emporia city,51595,Nitrogen Oxides,CAP,127.5139504,TON
+Highway Vehicles,Rappahannock,51157,Nitrogen Oxides,CAP,127.3758684,TON
+Highway Vehicles,Colonial Heights city,51570,Volatile Organic Compounds,CAP,126.929938,TON
+Highway Vehicles,Williamsburg city,51830,Nitrogen Oxides,CAP,125.9644546,TON
+Highway Vehicles,Middlesex,51119,Volatile Organic Compounds,CAP,125.9474278,TON
+Highway Vehicles,Dickenson,51051,Volatile Organic Compounds,CAP,124.5655633,TON
+Highway Vehicles,Fairfax city,51600,Nitrogen Oxides,CAP,123.8565315,TON
+Highway Vehicles,Essex,51057,Volatile Organic Compounds,CAP,122.7595524,TON
+Highway Vehicles,Stafford,51179,PM10 Primary (Filt + Cond),CAP,119.5535632,TON
+Highway Vehicles,Lancaster,51103,Volatile Organic Compounds,CAP,118.365594,TON
+Highway Vehicles,Fairfax city,51600,Volatile Organic Compounds,CAP,117.745025,TON
+Highway Vehicles,Arlington,51013,PM10 Primary (Filt + Cond),CAP,116.0364933,TON
+Highway Vehicles,Martinsville city,51690,Nitrogen Oxides,CAP,114.6466463,TON
+Highway Vehicles,Chesapeake city,51550,PM10 Primary (Filt + Cond),CAP,113.8241056,TON
+Highway Vehicles,Martinsville city,51690,Volatile Organic Compounds,CAP,109.3857244,TON
+Highway Vehicles,Augusta,51015,PM10 Primary (Filt + Cond),CAP,107.7644649,TON
+Highway Vehicles,Cumberland,51049,Volatile Organic Compounds,CAP,107.5919026,TON
+Highway Vehicles,Williamsburg city,51830,Volatile Organic Compounds,CAP,106.8921851,TON
+Highway Vehicles,Charles city,51036,Nitrogen Oxides,CAP,106.2893097,TON
+Highway Vehicles,Richmond,51159,Volatile Organic Compounds,CAP,103.8918621,TON
+Highway Vehicles,King and Queen,51097,Volatile Organic Compounds,CAP,103.7406513,TON
+Highway Vehicles,Norfolk city,51710,PM10 Primary (Filt + Cond),CAP,101.4739023,TON
+Highway Vehicles,Henrico,51087,Ammonia,CAP,101.3166647,TON
+Highway Vehicles,Prince William,51153,Ammonia,CAP,100.5502699,TON
+Highway Vehicles,Chesterfield,51041,Ammonia,CAP,97.00964426,TON
+Highway Vehicles,Mathews,51115,Nitrogen Oxides,CAP,95.8836841,TON
+Highway Vehicles,Radford city,51750,Nitrogen Oxides,CAP,95.8276748,TON
+Highway Vehicles,Virginia Beach city,51810,Ammonia,CAP,95.58998668,TON
+Highway Vehicles,Roanoke city,51770,PM10 Primary (Filt + Cond),CAP,93.4635221,TON
+Highway Vehicles,Surry,51181,Nitrogen Oxides,CAP,92.22340313,TON
+Highway Vehicles,Fairfax,51059,Sulfur Dioxide,CAP,91.25368577,TON
+Highway Vehicles,Charles city,51036,Volatile Organic Compounds,CAP,91.12029724,TON
+Highway Vehicles,Albemarle,51003,PM10 Primary (Filt + Cond),CAP,90.53231322,TON
+Highway Vehicles,Radford city,51750,Volatile Organic Compounds,CAP,89.66964291,TON
+Highway Vehicles,Rappahannock,51157,Volatile Organic Compounds,CAP,88.49743337,TON
+Highway Vehicles,Rockingham,51165,PM10 Primary (Filt + Cond),CAP,88.19928744,TON
+Highway Vehicles,Frederick,51069,PM10 Primary (Filt + Cond),CAP,86.85405859,TON
+Highway Vehicles,Prince William,51153,PM2.5 Primary (Filt + Cond),CAP,85.83866735,TON
+Highway Vehicles,Chesapeake city,51550,Ammonia,CAP,85.16011758,TON
+Highway Vehicles,Montgomery,51121,PM10 Primary (Filt + Cond),CAP,84.53132723,TON
+Highway Vehicles,Henrico,51087,PM2.5 Primary (Filt + Cond),CAP,84.52722593,TON
+Highway Vehicles,Newport News city,51700,PM10 Primary (Filt + Cond),CAP,83.94873221,TON
+Highway Vehicles,Mathews,51115,Volatile Organic Compounds,CAP,83.83549669,TON
+Highway Vehicles,Bath,51017,Nitrogen Oxides,CAP,83.46490781,TON
+Highway Vehicles,Suffolk city,51800,PM10 Primary (Filt + Cond),CAP,82.42911662,TON
+Highway Vehicles,Spotsylvania,51177,PM10 Primary (Filt + Cond),CAP,81.61963434,TON
+Highway Vehicles,Fauquier,51061,PM10 Primary (Filt + Cond),CAP,78.16911355,TON
+Highway Vehicles,Chesterfield,51041,PM2.5 Primary (Filt + Cond),CAP,76.3034984,TON
+Highway Vehicles,Loudoun,51107,Ammonia,CAP,73.97088332,TON
+Highway Vehicles,Virginia Beach city,51810,PM2.5 Primary (Filt + Cond),CAP,73.88252503,TON
+Highway Vehicles,Galax city,51640,Nitrogen Oxides,CAP,72.26090913,TON
+Highway Vehicles,Craig,51045,Nitrogen Oxides,CAP,70.85444443,TON
+Highway Vehicles,Poquoson city,51735,Volatile Organic Compounds,CAP,69.8881792,TON
+Highway Vehicles,Surry,51181,Volatile Organic Compounds,CAP,69.40800574,TON
+Highway Vehicles,Norfolk city,51710,Ammonia,CAP,67.88663011,TON
+Highway Vehicles,Shenandoah,51171,PM10 Primary (Filt + Cond),CAP,67.22832687,TON
+Highway Vehicles,Hampton city,51650,PM10 Primary (Filt + Cond),CAP,66.62545658,TON
+Highway Vehicles,Augusta,51015,PM2.5 Primary (Filt + Cond),CAP,66.18786976,TON
+Highway Vehicles,Botetourt,51023,PM10 Primary (Filt + Cond),CAP,64.61840594,TON
+Highway Vehicles,Rockbridge,51163,PM10 Primary (Filt + Cond),CAP,64.09403668,TON
+Highway Vehicles,Covington city,51580,Nitrogen Oxides,CAP,63.84596179,TON
+Highway Vehicles,Prince George,51149,PM10 Primary (Filt + Cond),CAP,63.76389594,TON
+Highway Vehicles,Wythe,51197,PM10 Primary (Filt + Cond),CAP,62.04167811,TON
+Highway Vehicles,Richmond city,51760,Ammonia,CAP,61.51114237,TON
+Highway Vehicles,Poquoson city,51735,Nitrogen Oxides,CAP,60.96069969,TON
+Highway Vehicles,Richmond city,51760,PM2.5 Primary (Filt + Cond),CAP,60.86761616,TON
+Highway Vehicles,Roanoke,51161,PM10 Primary (Filt + Cond),CAP,60.7856459,TON
+Highway Vehicles,Chesapeake city,51550,PM2.5 Primary (Filt + Cond),CAP,60.37163782,TON
+Highway Vehicles,Galax city,51640,Volatile Organic Compounds,CAP,60.16760511,TON
+Highway Vehicles,Caroline,51033,PM10 Primary (Filt + Cond),CAP,59.70992956,TON
+Highway Vehicles,Craig,51045,Volatile Organic Compounds,CAP,59.51980744,TON
+Highway Vehicles,Falls Church city,51610,Volatile Organic Compounds,CAP,58.92227963,TON
+Highway Vehicles,Bath,51017,Volatile Organic Compounds,CAP,58.56672089,TON
+Highway Vehicles,Washington,51191,PM10 Primary (Filt + Cond),CAP,57.59906482,TON
+Highway Vehicles,Loudoun,51107,PM2.5 Primary (Filt + Cond),CAP,57.34911038,TON
+Highway Vehicles,Franklin city,51620,Volatile Organic Compounds,CAP,56.48076993,TON
+Highway Vehicles,Emporia city,51595,Volatile Organic Compounds,CAP,56.05436783,TON
+Highway Vehicles,Highland,51091,Nitrogen Oxides,CAP,55.78852449,TON
+Highway Vehicles,Alexandria city,51510,PM10 Primary (Filt + Cond),CAP,54.90991028,TON
+Highway Vehicles,Manassas Park city,51685,Volatile Organic Compounds,CAP,54.88098544,TON
+Highway Vehicles,Norton city,51720,Nitrogen Oxides,CAP,54.64752986,TON
+Highway Vehicles,Newport News city,51700,Ammonia,CAP,53.88623559,TON
+Highway Vehicles,Franklin city,51620,Nitrogen Oxides,CAP,50.50671097,TON
+Highway Vehicles,Frederick,51069,PM2.5 Primary (Filt + Cond),CAP,49.75306085,TON
+Highway Vehicles,Covington city,51580,Volatile Organic Compounds,CAP,49.30441756,TON
+Highway Vehicles,Rockingham,51165,PM2.5 Primary (Filt + Cond),CAP,49.24428093,TON
+Highway Vehicles,Buena Vista city,51530,Volatile Organic Compounds,CAP,48.8684514,TON
+Highway Vehicles,Augusta,51015,Ammonia,CAP,48.01851351,TON
+Highway Vehicles,Falls Church city,51610,Nitrogen Oxides,CAP,48.00799374,TON
+Highway Vehicles,Bedford,51019,PM10 Primary (Filt + Cond),CAP,47.91339017,TON
+Highway Vehicles,Stafford,51179,Ammonia,CAP,47.78716275,TON
+Highway Vehicles,Stafford,51179,PM2.5 Primary (Filt + Cond),CAP,47.77690106,TON
+Highway Vehicles,Fredericksburg city,51630,PM10 Primary (Filt + Cond),CAP,46.84089673,TON
+Highway Vehicles,Norfolk city,51710,PM2.5 Primary (Filt + Cond),CAP,46.81596016,TON
+Highway Vehicles,Carroll,51035,PM10 Primary (Filt + Cond),CAP,46.50990962,TON
+Highway Vehicles,Albemarle,51003,Ammonia,CAP,46.45616371,TON
+Highway Vehicles,Lynchburg city,51680,PM10 Primary (Filt + Cond),CAP,45.55149093,TON
+Highway Vehicles,Shenandoah,51171,PM2.5 Primary (Filt + Cond),CAP,45.40788927,TON
+Highway Vehicles,Pulaski,51155,PM10 Primary (Filt + Cond),CAP,45.10536872,TON
+Highway Vehicles,Fauquier,51061,Ammonia,CAP,45.01819898,TON
+Highway Vehicles,Montgomery,51121,PM2.5 Primary (Filt + Cond),CAP,44.90777868,TON
+Highway Vehicles,Buena Vista city,51530,Nitrogen Oxides,CAP,44.82276076,TON
+Highway Vehicles,Arlington,51013,Ammonia,CAP,44.74774817,TON
+Highway Vehicles,Spotsylvania,51177,Ammonia,CAP,44.23766241,TON
+Highway Vehicles,Rockbridge,51163,PM2.5 Primary (Filt + Cond),CAP,43.85565614,TON
+Highway Vehicles,Suffolk city,51800,Ammonia,CAP,43.69178259,TON
+Highway Vehicles,Isle of Wight,51093,PM10 Primary (Filt + Cond),CAP,43.58348556,TON
+Highway Vehicles,Hampton city,51650,Ammonia,CAP,43.57062421,TON
+Highway Vehicles,Fauquier,51061,PM2.5 Primary (Filt + Cond),CAP,43.41614553,TON
+Highway Vehicles,Albemarle,51003,PM2.5 Primary (Filt + Cond),CAP,43.22919861,TON
+Highway Vehicles,Spotsylvania,51177,PM2.5 Primary (Filt + Cond),CAP,43.15600381,TON
+Highway Vehicles,Manassas Park city,51685,Nitrogen Oxides,CAP,42.32378025,TON
+Highway Vehicles,Wythe,51197,PM2.5 Primary (Filt + Cond),CAP,42.22949834,TON
+Highway Vehicles,Portsmouth city,51740,PM10 Primary (Filt + Cond),CAP,42.01949558,TON
+Highway Vehicles,Suffolk city,51800,PM2.5 Primary (Filt + Cond),CAP,40.33495618,TON
+Highway Vehicles,Henry,51089,PM10 Primary (Filt + Cond),CAP,40.31036904,TON
+Highway Vehicles,Botetourt,51023,PM2.5 Primary (Filt + Cond),CAP,40.15338244,TON
+Highway Vehicles,Pittsylvania,51143,PM10 Primary (Filt + Cond),CAP,39.84691582,TON
+Highway Vehicles,Campbell,51031,PM10 Primary (Filt + Cond),CAP,39.69270523,TON
+Highway Vehicles,Frederick,51069,Ammonia,CAP,39.39842576,TON
+Highway Vehicles,Franklin,51067,PM10 Primary (Filt + Cond),CAP,39.39529371,TON
+Highway Vehicles,Warren,51187,PM10 Primary (Filt + Cond),CAP,38.82434796,TON
+Highway Vehicles,Caroline,51033,Ammonia,CAP,37.90375075,TON
+Highway Vehicles,Caroline,51033,PM2.5 Primary (Filt + Cond),CAP,37.66816266,TON
+Highway Vehicles,Newport News city,51700,PM2.5 Primary (Filt + Cond),CAP,37.59866013,TON
+Highway Vehicles,Highland,51091,Volatile Organic Compounds,CAP,37.50202592,TON
+Highway Vehicles,Montgomery,51121,Ammonia,CAP,37.38399574,TON
+Highway Vehicles,Hanover,51085,PM10 Primary (Filt + Cond),CAP,37.26844547,TON
+Highway Vehicles,Rockingham,51165,Ammonia,CAP,37.01342307,TON
+Highway Vehicles,Dinwiddie,51053,PM10 Primary (Filt + Cond),CAP,36.50473135,TON
+Highway Vehicles,Harrisonburg city,51660,PM10 Primary (Filt + Cond),CAP,35.7561186,TON
+Highway Vehicles,Goochland,51075,PM10 Primary (Filt + Cond),CAP,35.49360222,TON
+Highway Vehicles,Arlington,51013,PM2.5 Primary (Filt + Cond),CAP,35.19279671,TON
+Highway Vehicles,New Kent,51127,PM10 Primary (Filt + Cond),CAP,34.91420697,TON
+Highway Vehicles,Roanoke,51161,PM2.5 Primary (Filt + Cond),CAP,34.54370982,TON
+Highway Vehicles,Roanoke city,51770,PM2.5 Primary (Filt + Cond),CAP,34.42038266,TON
+Highway Vehicles,James city,51095,PM10 Primary (Filt + Cond),CAP,34.31623311,TON
+Highway Vehicles,Culpeper,51047,PM10 Primary (Filt + Cond),CAP,34.0500562,TON
+Highway Vehicles,Prince William,51153,Sulfur Dioxide,CAP,33.5982224,TON
+Highway Vehicles,Mecklenburg,51117,PM10 Primary (Filt + Cond),CAP,33.51959685,TON
+Highway Vehicles,Washington,51191,PM2.5 Primary (Filt + Cond),CAP,32.29148,TON
+Highway Vehicles,York,51199,PM10 Primary (Filt + Cond),CAP,32.06300896,TON
+Highway Vehicles,Shenandoah,51171,Ammonia,CAP,31.89970941,TON
+Highway Vehicles,Henrico,51087,Sulfur Dioxide,CAP,31.77087854,TON
+Highway Vehicles,Danville city,51590,PM10 Primary (Filt + Cond),CAP,31.22079221,TON
+Highway Vehicles,Carroll,51035,PM2.5 Primary (Filt + Cond),CAP,31.1605433,TON
+Highway Vehicles,Hampton city,51650,PM2.5 Primary (Filt + Cond),CAP,31.10563478,TON
+Highway Vehicles,Norton city,51720,Volatile Organic Compounds,CAP,30.93497255,TON
+Highway Vehicles,Roanoke,51161,Ammonia,CAP,30.28379908,TON
+Highway Vehicles,Virginia Beach city,51810,Sulfur Dioxide,CAP,30.01470904,TON
+Highway Vehicles,Chesterfield,51041,Sulfur Dioxide,CAP,29.58263141,TON
+Highway Vehicles,Wythe,51197,Ammonia,CAP,29.51953826,TON
+Highway Vehicles,Louisa,51109,PM10 Primary (Filt + Cond),CAP,29.48552614,TON
+Highway Vehicles,Smyth,51173,PM10 Primary (Filt + Cond),CAP,29.36792743,TON
+Highway Vehicles,Amherst,51009,PM10 Primary (Filt + Cond),CAP,28.92006675,TON
+Highway Vehicles,Roanoke city,51770,Ammonia,CAP,28.86539945,TON
+Highway Vehicles,Halifax,51083,PM10 Primary (Filt + Cond),CAP,28.26817119,TON
+Highway Vehicles,Lexington city,51678,Volatile Organic Compounds,CAP,27.20130644,TON
+Highway Vehicles,Sussex,51183,PM10 Primary (Filt + Cond),CAP,27.16833463,TON
+Highway Vehicles,Rockbridge,51163,Ammonia,CAP,27.0817717,TON
+Highway Vehicles,Botetourt,51023,Ammonia,CAP,26.62279693,TON
+Highway Vehicles,Prince George,51149,PM2.5 Primary (Filt + Cond),CAP,26.46846123,TON
+Highway Vehicles,Lexington city,51678,Nitrogen Oxides,CAP,26.44028173,TON
+Highway Vehicles,Pulaski,51155,PM2.5 Primary (Filt + Cond),CAP,25.92000191,TON
+Highway Vehicles,Washington,51191,Ammonia,CAP,25.84537623,TON
+Highway Vehicles,Loudoun,51107,Sulfur Dioxide,CAP,25.82745581,TON
+Highway Vehicles,Brunswick,51025,PM10 Primary (Filt + Cond),CAP,25.28642137,TON
+Highway Vehicles,Southampton,51175,PM10 Primary (Filt + Cond),CAP,24.94182171,TON
+Highway Vehicles,Bedford,51019,Ammonia,CAP,24.92816317,TON
+Highway Vehicles,Gloucester,51073,PM10 Primary (Filt + Cond),CAP,24.77212575,TON
+Highway Vehicles,Hanover,51085,Ammonia,CAP,24.72887064,TON
+Highway Vehicles,Chesapeake city,51550,Sulfur Dioxide,CAP,24.13580781,TON
+Highway Vehicles,Hanover,51085,PM2.5 Primary (Filt + Cond),CAP,23.9772818,TON
+Highway Vehicles,Pittsylvania,51143,Ammonia,CAP,23.72131647,TON
+Highway Vehicles,Bedford,51019,PM2.5 Primary (Filt + Cond),CAP,23.671073,TON
+Highway Vehicles,Tazewell,51185,PM10 Primary (Filt + Cond),CAP,23.65738071,TON
+Highway Vehicles,Goochland,51075,Ammonia,CAP,23.44108324,TON
+Highway Vehicles,Charlottesville city,51540,PM10 Primary (Filt + Cond),CAP,23.31134862,TON
+Highway Vehicles,Lynchburg city,51680,Ammonia,CAP,23.19269993,TON
+Highway Vehicles,Petersburg city,51730,PM10 Primary (Filt + Cond),CAP,22.96474415,TON
+Highway Vehicles,Wise,51195,PM10 Primary (Filt + Cond),CAP,22.95091573,TON
+Highway Vehicles,Accomack,51001,PM10 Primary (Filt + Cond),CAP,22.68956893,TON
+Highway Vehicles,New Kent,51127,Ammonia,CAP,22.66426081,TON
+Highway Vehicles,James city,51095,Ammonia,CAP,22.41301346,TON
+Highway Vehicles,Pittsylvania,51143,PM2.5 Primary (Filt + Cond),CAP,22.40253353,TON
+Highway Vehicles,Campbell,51031,Ammonia,CAP,22.11303368,TON
+Highway Vehicles,Carroll,51035,Ammonia,CAP,21.87501948,TON
+Highway Vehicles,Greensville,51081,PM10 Primary (Filt + Cond),CAP,21.49766779,TON
+Highway Vehicles,Dinwiddie,51053,PM2.5 Primary (Filt + Cond),CAP,21.48104402,TON
+Highway Vehicles,Henry,51089,Ammonia,CAP,21.44252118,TON
+Highway Vehicles,Henry,51089,PM2.5 Primary (Filt + Cond),CAP,21.40873054,TON
+Highway Vehicles,Mecklenburg,51117,PM2.5 Primary (Filt + Cond),CAP,21.33577678,TON
+Highway Vehicles,Warren,51187,PM2.5 Primary (Filt + Cond),CAP,21.24803136,TON
+Highway Vehicles,New Kent,51127,PM2.5 Primary (Filt + Cond),CAP,21.07733299,TON
+Highway Vehicles,Franklin,51067,PM2.5 Primary (Filt + Cond),CAP,20.94678396,TON
+Highway Vehicles,Goochland,51075,PM2.5 Primary (Filt + Cond),CAP,20.92863325,TON
+Highway Vehicles,Campbell,51031,PM2.5 Primary (Filt + Cond),CAP,20.92651222,TON
+Highway Vehicles,Bland,51021,PM10 Primary (Filt + Cond),CAP,20.8593271,TON
+Highway Vehicles,Franklin,51067,Ammonia,CAP,20.79371946,TON
+Highway Vehicles,Alexandria city,51510,Ammonia,CAP,20.79091484,TON
+Highway Vehicles,York,51199,Ammonia,CAP,20.74154157,TON
+Highway Vehicles,Alleghany,51005,PM10 Primary (Filt + Cond),CAP,20.73824095,TON
+Highway Vehicles,Louisa,51109,Ammonia,CAP,20.71965737,TON
+Highway Vehicles,Mecklenburg,51117,Ammonia,CAP,20.31162358,TON
+Highway Vehicles,Lynchburg city,51680,PM2.5 Primary (Filt + Cond),CAP,19.81546945,TON
+Highway Vehicles,Richmond city,51760,Sulfur Dioxide,CAP,19.698037,TON
+Highway Vehicles,Fairfax city,51600,PM10 Primary (Filt + Cond),CAP,19.54721006,TON
+Highway Vehicles,Norfolk city,51710,Sulfur Dioxide,CAP,19.5088596,TON
+Highway Vehicles,Powhatan,51145,PM10 Primary (Filt + Cond),CAP,19.41989951,TON
+Highway Vehicles,Bristol city,51520,PM10 Primary (Filt + Cond),CAP,19.27349697,TON
+Highway Vehicles,Louisa,51109,PM2.5 Primary (Filt + Cond),CAP,19.10966063,TON
+Highway Vehicles,Pulaski,51155,Ammonia,CAP,19.06069647,TON
+Highway Vehicles,Smyth,51173,PM2.5 Primary (Filt + Cond),CAP,18.96696272,TON
+Highway Vehicles,Portsmouth city,51740,Ammonia,CAP,18.84930031,TON
+Highway Vehicles,Culpeper,51047,Ammonia,CAP,18.37145506,TON
+Highway Vehicles,Prince George,51149,Ammonia,CAP,18.16537524,TON
+Highway Vehicles,Scott,51169,PM10 Primary (Filt + Cond),CAP,18.00175356,TON
+Highway Vehicles,Dinwiddie,51053,Ammonia,CAP,17.99131989,TON
+Highway Vehicles,Alexandria city,51510,PM2.5 Primary (Filt + Cond),CAP,17.88494151,TON
+Highway Vehicles,Sussex,51183,PM2.5 Primary (Filt + Cond),CAP,17.71377467,TON
+Highway Vehicles,Isle of Wight,51093,PM2.5 Primary (Filt + Cond),CAP,17.67238404,TON
+Highway Vehicles,Warren,51187,Ammonia,CAP,17.61887338,TON
+Highway Vehicles,James city,51095,PM2.5 Primary (Filt + Cond),CAP,17.4146976,TON
+Highway Vehicles,Isle of Wight,51093,Ammonia,CAP,17.25830602,TON
+Highway Vehicles,Clarke,51043,PM10 Primary (Filt + Cond),CAP,17.20685995,TON
+Highway Vehicles,Stafford,51179,Sulfur Dioxide,CAP,16.98038074,TON
+Highway Vehicles,Colonial Heights city,51570,PM10 Primary (Filt + Cond),CAP,16.90067159,TON
+Highway Vehicles,Fredericksburg city,51630,PM2.5 Primary (Filt + Cond),CAP,16.77035662,TON
+Highway Vehicles,Brunswick,51025,PM2.5 Primary (Filt + Cond),CAP,16.65886419,TON
+Highway Vehicles,Prince Edward,51147,PM10 Primary (Filt + Cond),CAP,16.47662624,TON
+Highway Vehicles,Accomack,51001,Ammonia,CAP,16.44995338,TON
+Highway Vehicles,Nelson,51125,PM10 Primary (Filt + Cond),CAP,16.17537798,TON
+Highway Vehicles,Russell,51167,PM10 Primary (Filt + Cond),CAP,16.10323201,TON
+Highway Vehicles,Harrisonburg city,51660,PM2.5 Primary (Filt + Cond),CAP,16.09493384,TON
+Highway Vehicles,Arlington,51013,Sulfur Dioxide,CAP,15.89574773,TON
+Highway Vehicles,Culpeper,51047,PM2.5 Primary (Filt + Cond),CAP,15.83842423,TON
+Highway Vehicles,Halifax,51083,PM2.5 Primary (Filt + Cond),CAP,15.78663427,TON
+Highway Vehicles,Orange,51137,PM10 Primary (Filt + Cond),CAP,15.73082149,TON
+Highway Vehicles,Newport News city,51700,Sulfur Dioxide,CAP,15.67820893,TON
+Highway Vehicles,Portsmouth city,51740,PM2.5 Primary (Filt + Cond),CAP,15.48203971,TON
+Highway Vehicles,Smyth,51173,Ammonia,CAP,15.42066585,TON
+Highway Vehicles,Manassas city,51683,PM10 Primary (Filt + Cond),CAP,15.32687969,TON
+Highway Vehicles,Southampton,51175,PM2.5 Primary (Filt + Cond),CAP,15.2155304,TON
+Highway Vehicles,York,51199,PM2.5 Primary (Filt + Cond),CAP,14.95317749,TON
+Highway Vehicles,Sussex,51183,Ammonia,CAP,14.87628177,TON
+Highway Vehicles,Halifax,51083,Ammonia,CAP,14.80648341,TON
+Highway Vehicles,Amherst,51009,PM2.5 Primary (Filt + Cond),CAP,14.73181087,TON
+Highway Vehicles,Gloucester,51073,Ammonia,CAP,14.690483,TON
+Highway Vehicles,Bland,51021,PM2.5 Primary (Filt + Cond),CAP,14.67765781,TON
+Highway Vehicles,King George,51099,PM10 Primary (Filt + Cond),CAP,14.67453737,TON
+Highway Vehicles,Northampton,51131,PM10 Primary (Filt + Cond),CAP,14.35103034,TON
+Highway Vehicles,Greensville,51081,PM2.5 Primary (Filt + Cond),CAP,14.18741004,TON
+Highway Vehicles,Amherst,51009,Ammonia,CAP,13.96023387,TON
+Highway Vehicles,Augusta,51015,Sulfur Dioxide,CAP,13.91630921,TON
+Highway Vehicles,Albemarle,51003,Sulfur Dioxide,CAP,13.86952564,TON
+Highway Vehicles,Winchester city,51840,PM10 Primary (Filt + Cond),CAP,13.72546759,TON
+Highway Vehicles,Alleghany,51005,PM2.5 Primary (Filt + Cond),CAP,13.70172849,TON
+Highway Vehicles,Waynesboro city,51820,PM10 Primary (Filt + Cond),CAP,13.53703875,TON
+Highway Vehicles,Danville city,51590,PM2.5 Primary (Filt + Cond),CAP,13.45306195,TON
+Highway Vehicles,Greene,51079,PM10 Primary (Filt + Cond),CAP,13.42532927,TON
+Highway Vehicles,Brunswick,51025,Ammonia,CAP,13.3984789,TON
+Highway Vehicles,Danville city,51590,Ammonia,CAP,13.37090548,TON
+Highway Vehicles,Spotsylvania,51177,Sulfur Dioxide,CAP,13.30787094,TON
+Highway Vehicles,Southampton,51175,Ammonia,CAP,13.26864825,TON
+Highway Vehicles,Hopewell city,51670,PM10 Primary (Filt + Cond),CAP,13.09994259,TON
+Highway Vehicles,Suffolk city,51800,Sulfur Dioxide,CAP,13.09209136,TON
+Highway Vehicles,Fauquier,51061,Sulfur Dioxide,CAP,13.07440696,TON
+Highway Vehicles,Accomack,51001,PM2.5 Primary (Filt + Cond),CAP,13.0737958,TON
+Highway Vehicles,Williamsburg city,51830,PM10 Primary (Filt + Cond),CAP,12.95159638,TON
+Highway Vehicles,Salem city,51775,PM10 Primary (Filt + Cond),CAP,12.88363008,TON
+Highway Vehicles,Wise,51195,Ammonia,CAP,12.87956855,TON
+Highway Vehicles,Giles,51071,PM10 Primary (Filt + Cond),CAP,12.86998454,TON
+Highway Vehicles,Hampton city,51650,Sulfur Dioxide,CAP,12.50329411,TON
+Highway Vehicles,Petersburg city,51730,PM2.5 Primary (Filt + Cond),CAP,12.42223995,TON
+Highway Vehicles,Tazewell,51185,Ammonia,CAP,12.36920318,TON
+Highway Vehicles,Greensville,51081,Ammonia,CAP,12.29531459,TON
+Highway Vehicles,Petersburg city,51730,Ammonia,CAP,12.28970428,TON
+Highway Vehicles,Staunton city,51790,PM10 Primary (Filt + Cond),CAP,12.24147763,TON
+Highway Vehicles,Fluvanna,51065,PM10 Primary (Filt + Cond),CAP,12.20167694,TON
+Highway Vehicles,Frederick,51069,Sulfur Dioxide,CAP,12.19773106,TON
+Highway Vehicles,Fredericksburg city,51630,Ammonia,CAP,11.90727117,TON
+Highway Vehicles,Powhatan,51145,Ammonia,CAP,11.86096986,TON
+Highway Vehicles,Harrisonburg city,51660,Ammonia,CAP,11.80656837,TON
+Highway Vehicles,Montgomery,51121,Sulfur Dioxide,CAP,11.57314946,TON
+Highway Vehicles,Nottoway,51135,PM10 Primary (Filt + Cond),CAP,11.50955871,TON
+Highway Vehicles,Gloucester,51073,PM2.5 Primary (Filt + Cond),CAP,11.31529568,TON
+Highway Vehicles,Tazewell,51185,PM2.5 Primary (Filt + Cond),CAP,11.18427017,TON
+Highway Vehicles,Wise,51195,PM2.5 Primary (Filt + Cond),CAP,11.01738166,TON
+Highway Vehicles,Orange,51137,Ammonia,CAP,10.87015841,TON
+Highway Vehicles,Russell,51167,Ammonia,CAP,10.86917414,TON
+Highway Vehicles,King George,51099,Ammonia,CAP,10.83260481,TON
+Highway Vehicles,Rockingham,51165,Sulfur Dioxide,CAP,10.78079815,TON
+Highway Vehicles,Page,51139,PM10 Primary (Filt + Cond),CAP,10.61465033,TON
+Highway Vehicles,Clarke,51043,Ammonia,CAP,10.53640525,TON
+Highway Vehicles,Buchanan,51027,PM10 Primary (Filt + Cond),CAP,10.40908436,TON
+Highway Vehicles,Bland,51021,Ammonia,CAP,10.32429766,TON
+Highway Vehicles,Amelia,51007,PM10 Primary (Filt + Cond),CAP,10.23227048,TON
+Highway Vehicles,Northampton,51131,Ammonia,CAP,10.20538656,TON
+Highway Vehicles,Buckingham,51029,PM10 Primary (Filt + Cond),CAP,10.1497838,TON
+Highway Vehicles,Bristol city,51520,PM2.5 Primary (Filt + Cond),CAP,10.03973665,TON
+Highway Vehicles,Powhatan,51145,PM2.5 Primary (Filt + Cond),CAP,9.983671401,TON
+Highway Vehicles,Caroline,51033,Sulfur Dioxide,CAP,9.931850713,TON
+Highway Vehicles,Madison,51113,PM10 Primary (Filt + Cond),CAP,9.929294976,TON
+Highway Vehicles,Appomattox,51011,PM10 Primary (Filt + Cond),CAP,9.885714232,TON
+Highway Vehicles,Patrick,51141,PM10 Primary (Filt + Cond),CAP,9.839988264,TON
+Highway Vehicles,Scott,51169,Ammonia,CAP,9.836810482,TON
+Highway Vehicles,Prince Edward,51147,Ammonia,CAP,9.830071258,TON
+Highway Vehicles,Clarke,51043,PM2.5 Primary (Filt + Cond),CAP,9.796305692,TON
+Highway Vehicles,Russell,51167,PM2.5 Primary (Filt + Cond),CAP,9.757086069,TON
+Highway Vehicles,Lee,51105,PM10 Primary (Filt + Cond),CAP,9.754864139,TON
+Highway Vehicles,Alleghany,51005,Ammonia,CAP,9.722308128,TON
+Highway Vehicles,King William,51101,PM10 Primary (Filt + Cond),CAP,9.615734072,TON
+Highway Vehicles,Nelson,51125,Ammonia,CAP,9.392799757,TON
+Highway Vehicles,Charlotte,51037,PM10 Primary (Filt + Cond),CAP,9.388111539,TON
+Highway Vehicles,Nelson,51125,PM2.5 Primary (Filt + Cond),CAP,9.382500412,TON
+Highway Vehicles,Orange,51137,PM2.5 Primary (Filt + Cond),CAP,9.302426363,TON
+Highway Vehicles,Roanoke,51161,Sulfur Dioxide,CAP,9.254700962,TON
+Highway Vehicles,Roanoke city,51770,Sulfur Dioxide,CAP,9.177019465,TON
+Highway Vehicles,Shenandoah,51171,Sulfur Dioxide,CAP,9.12099054,TON
+Highway Vehicles,Prince Edward,51147,PM2.5 Primary (Filt + Cond),CAP,9.060292296,TON
+Highway Vehicles,Scott,51169,PM2.5 Primary (Filt + Cond),CAP,8.857472154,TON
+Highway Vehicles,Charlottesville city,51540,Ammonia,CAP,8.528669953,TON
+Highway Vehicles,Wythe,51197,Sulfur Dioxide,CAP,8.43512605,TON
+Highway Vehicles,Northampton,51131,PM2.5 Primary (Filt + Cond),CAP,8.213169108,TON
+Highway Vehicles,Rockbridge,51163,Sulfur Dioxide,CAP,8.185822835,TON
+Highway Vehicles,Washington,51191,Sulfur Dioxide,CAP,8.012442483,TON
+Highway Vehicles,Charlottesville city,51540,PM2.5 Primary (Filt + Cond),CAP,8.005779858,TON
+Highway Vehicles,King George,51099,PM2.5 Primary (Filt + Cond),CAP,7.994981013,TON
+Highway Vehicles,Essex,51057,PM10 Primary (Filt + Cond),CAP,7.964413692,TON
+Highway Vehicles,Botetourt,51023,Sulfur Dioxide,CAP,7.961634802,TON
+Highway Vehicles,Bristol city,51520,Ammonia,CAP,7.879481511,TON
+Highway Vehicles,Floyd,51063,PM10 Primary (Filt + Cond),CAP,7.86544808,TON
+Highway Vehicles,Nottoway,51135,Ammonia,CAP,7.778470977,TON
+Highway Vehicles,Alexandria city,51510,Sulfur Dioxide,CAP,7.589349453,TON
+Highway Vehicles,Buchanan,51027,Ammonia,CAP,7.495744895,TON
+Highway Vehicles,Hanover,51085,Sulfur Dioxide,CAP,7.444227003,TON
+Highway Vehicles,Westmoreland,51193,PM10 Primary (Filt + Cond),CAP,7.431905593,TON
+Highway Vehicles,Giles,51071,Ammonia,CAP,7.386317307,TON
+Highway Vehicles,Giles,51071,PM2.5 Primary (Filt + Cond),CAP,7.306273314,TON
+Highway Vehicles,Martinsville city,51690,PM10 Primary (Filt + Cond),CAP,7.281488681,TON
+Highway Vehicles,Colonial Heights city,51570,Ammonia,CAP,7.218770856,TON
+Highway Vehicles,Madison,51113,Ammonia,CAP,7.17786351,TON
+Highway Vehicles,Page,51139,Ammonia,CAP,7.109693129,TON
+Highway Vehicles,Bedford,51019,Sulfur Dioxide,CAP,7.025321356,TON
+Highway Vehicles,Lee,51105,Ammonia,CAP,6.887462392,TON
+Highway Vehicles,Grayson,51077,PM10 Primary (Filt + Cond),CAP,6.873742551,TON
+Highway Vehicles,James city,51095,Sulfur Dioxide,CAP,6.853189945,TON
+Highway Vehicles,Page,51139,PM2.5 Primary (Filt + Cond),CAP,6.826635936,TON
+Highway Vehicles,Nottoway,51135,PM2.5 Primary (Filt + Cond),CAP,6.740554612,TON
+Highway Vehicles,Amelia,51007,Ammonia,CAP,6.710627778,TON
+Highway Vehicles,Goochland,51075,Sulfur Dioxide,CAP,6.610892314,TON
+Highway Vehicles,King and Queen,51097,PM10 Primary (Filt + Cond),CAP,6.576649287,TON
+Highway Vehicles,Falls Church city,51610,PM10 Primary (Filt + Cond),CAP,6.480478717,TON
+Highway Vehicles,Fluvanna,51065,PM2.5 Primary (Filt + Cond),CAP,6.463363837,TON
+Highway Vehicles,Lynchburg city,51680,Sulfur Dioxide,CAP,6.462459055,TON
+Highway Vehicles,Pittsylvania,51143,Sulfur Dioxide,CAP,6.461823502,TON
+Highway Vehicles,Colonial Heights city,51570,PM2.5 Primary (Filt + Cond),CAP,6.437883107,TON
+Highway Vehicles,New Kent,51127,Sulfur Dioxide,CAP,6.406783643,TON
+Highway Vehicles,Fluvanna,51065,Ammonia,CAP,6.342636402,TON
+Highway Vehicles,Patrick,51141,PM2.5 Primary (Filt + Cond),CAP,6.32896326,TON
+Highway Vehicles,Emporia city,51595,PM10 Primary (Filt + Cond),CAP,6.288235236,TON
+Highway Vehicles,Carroll,51035,Sulfur Dioxide,CAP,6.284849848,TON
+Highway Vehicles,Appomattox,51011,Ammonia,CAP,6.264993638,TON
+Highway Vehicles,Greene,51079,Ammonia,CAP,6.243347369,TON
+Highway Vehicles,Prince George,51149,Sulfur Dioxide,CAP,6.21083447,TON
+Highway Vehicles,Buchanan,51027,PM2.5 Primary (Filt + Cond),CAP,6.210704116,TON
+Highway Vehicles,Dickenson,51051,PM10 Primary (Filt + Cond),CAP,6.170915596,TON
+Highway Vehicles,Patrick,51141,Ammonia,CAP,6.146834602,TON
+Highway Vehicles,York,51199,Sulfur Dioxide,CAP,6.134359124,TON
+Highway Vehicles,Buckingham,51029,Ammonia,CAP,6.118322825,TON
+Highway Vehicles,Greene,51079,PM2.5 Primary (Filt + Cond),CAP,6.105311187,TON
+Highway Vehicles,Waynesboro city,51820,PM2.5 Primary (Filt + Cond),CAP,6.09779733,TON
+Highway Vehicles,Salem city,51775,PM2.5 Primary (Filt + Cond),CAP,6.064207963,TON
+Highway Vehicles,Salem city,51775,Ammonia,CAP,6.039888477,TON
+Highway Vehicles,Campbell,51031,Sulfur Dioxide,CAP,6.027789876,TON
+Highway Vehicles,Portsmouth city,51740,Sulfur Dioxide,CAP,6.013206177,TON
+Highway Vehicles,Buckingham,51029,PM2.5 Primary (Filt + Cond),CAP,6.008340106,TON
+Highway Vehicles,Charlotte,51037,PM2.5 Primary (Filt + Cond),CAP,5.981679158,TON
+Highway Vehicles,Radford city,51750,PM10 Primary (Filt + Cond),CAP,5.89016053,TON
+Highway Vehicles,Essex,51057,Ammonia,CAP,5.844044008,TON
+Highway Vehicles,Madison,51113,PM2.5 Primary (Filt + Cond),CAP,5.837410006,TON
+Highway Vehicles,Lunenburg,51111,PM10 Primary (Filt + Cond),CAP,5.830194278,TON
+Highway Vehicles,Lee,51105,PM2.5 Primary (Filt + Cond),CAP,5.821723057,TON
+Highway Vehicles,Middlesex,51119,PM10 Primary (Filt + Cond),CAP,5.783956281,TON
+Highway Vehicles,Franklin,51067,Sulfur Dioxide,CAP,5.753413565,TON
+Highway Vehicles,Richmond,51159,PM10 Primary (Filt + Cond),CAP,5.720903818,TON
+Highway Vehicles,Amelia,51007,PM2.5 Primary (Filt + Cond),CAP,5.705726944,TON
+Highway Vehicles,Manassas city,51683,PM2.5 Primary (Filt + Cond),CAP,5.682157115,TON
+Highway Vehicles,Waynesboro city,51820,Ammonia,CAP,5.617204495,TON
+Highway Vehicles,Pulaski,51155,Sulfur Dioxide,CAP,5.607340782,TON
+Highway Vehicles,Appomattox,51011,PM2.5 Primary (Filt + Cond),CAP,5.556164882,TON
+Highway Vehicles,Henry,51089,Sulfur Dioxide,CAP,5.527763157,TON
+Highway Vehicles,Fairfax city,51600,Ammonia,CAP,5.51242783,TON
+Highway Vehicles,Northumberland,51133,PM10 Primary (Filt + Cond),CAP,5.496497786,TON
+Highway Vehicles,King William,51101,PM2.5 Primary (Filt + Cond),CAP,5.492933297,TON
+Highway Vehicles,Culpeper,51047,Sulfur Dioxide,CAP,5.479128801,TON
+Highway Vehicles,Mecklenburg,51117,Sulfur Dioxide,CAP,5.463209151,TON
+Highway Vehicles,Fairfax city,51600,PM2.5 Primary (Filt + Cond),CAP,5.408850306,TON
+Highway Vehicles,Louisa,51109,Sulfur Dioxide,CAP,5.404771901,TON
+Highway Vehicles,Charlotte,51037,Ammonia,CAP,5.351547379,TON
+Highway Vehicles,King William,51101,Ammonia,CAP,5.298902702,TON
+Highway Vehicles,Lancaster,51103,PM10 Primary (Filt + Cond),CAP,5.294762163,TON
+Highway Vehicles,Manassas city,51683,Ammonia,CAP,5.188317549,TON
+Highway Vehicles,Isle of Wight,51093,Sulfur Dioxide,CAP,5.154601819,TON
+Highway Vehicles,Hopewell city,51670,PM2.5 Primary (Filt + Cond),CAP,5.126900054,TON
+Highway Vehicles,Staunton city,51790,PM2.5 Primary (Filt + Cond),CAP,5.11351824,TON
+Highway Vehicles,Winchester city,51840,PM2.5 Primary (Filt + Cond),CAP,5.046561132,TON
+Highway Vehicles,Dinwiddie,51053,Sulfur Dioxide,CAP,5.025097652,TON
+Highway Vehicles,Warren,51187,Sulfur Dioxide,CAP,5.013856073,TON
+Highway Vehicles,Westmoreland,51193,Ammonia,CAP,4.999362845,TON
+Highway Vehicles,Williamsburg city,51830,Ammonia,CAP,4.987057988,TON
+Highway Vehicles,Floyd,51063,Ammonia,CAP,4.951055702,TON
+Highway Vehicles,Winchester city,51840,Ammonia,CAP,4.939701923,TON
+Highway Vehicles,Rappahannock,51157,PM10 Primary (Filt + Cond),CAP,4.908779067,TON
+Highway Vehicles,Galax city,51640,PM10 Primary (Filt + Cond),CAP,4.836656364,TON
+Highway Vehicles,Cumberland,51049,PM10 Primary (Filt + Cond),CAP,4.799693856,TON
+Highway Vehicles,Floyd,51063,PM2.5 Primary (Filt + Cond),CAP,4.798204309,TON
+Highway Vehicles,Poquoson city,51735,PM10 Primary (Filt + Cond),CAP,4.620501374,TON
+Highway Vehicles,Essex,51057,PM2.5 Primary (Filt + Cond),CAP,4.590545079,TON
+Highway Vehicles,Staunton city,51790,Ammonia,CAP,4.583786272,TON
+Highway Vehicles,Westmoreland,51193,PM2.5 Primary (Filt + Cond),CAP,4.51242273,TON
+Highway Vehicles,Grayson,51077,Ammonia,CAP,4.48734938,TON
+Highway Vehicles,Middlesex,51119,Ammonia,CAP,4.444288983,TON
+Highway Vehicles,King and Queen,51097,Ammonia,CAP,4.307538408,TON
+Highway Vehicles,Smyth,51173,Sulfur Dioxide,CAP,4.305860087,TON
+Highway Vehicles,Richmond,51159,Ammonia,CAP,4.271911625,TON
+Highway Vehicles,Accomack,51001,Sulfur Dioxide,CAP,4.254914031,TON
+Highway Vehicles,Grayson,51077,PM2.5 Primary (Filt + Cond),CAP,4.238185172,TON
+Highway Vehicles,Fredericksburg city,51630,Sulfur Dioxide,CAP,4.164637888,TON
+Highway Vehicles,King and Queen,51097,PM2.5 Primary (Filt + Cond),CAP,4.078551758,TON
+Highway Vehicles,Sussex,51183,Sulfur Dioxide,CAP,4.041336841,TON
+Highway Vehicles,Gloucester,51073,Sulfur Dioxide,CAP,4.019981573,TON
+Highway Vehicles,Northumberland,51133,Ammonia,CAP,4.010071067,TON
+Highway Vehicles,Dickenson,51051,Ammonia,CAP,3.987191865,TON
+Highway Vehicles,Amherst,51009,Sulfur Dioxide,CAP,3.957322923,TON
+Highway Vehicles,Lancaster,51103,Ammonia,CAP,3.95161983,TON
+Highway Vehicles,Harrisonburg city,51660,Sulfur Dioxide,CAP,3.926544866,TON
+Highway Vehicles,Charles city,51036,PM10 Primary (Filt + Cond),CAP,3.917908784,TON
+Highway Vehicles,Danville city,51590,Sulfur Dioxide,CAP,3.917613135,TON
+Highway Vehicles,Wise,51195,Sulfur Dioxide,CAP,3.843424371,TON
+Highway Vehicles,Halifax,51083,Sulfur Dioxide,CAP,3.831670551,TON
+Highway Vehicles,Williamsburg city,51830,PM2.5 Primary (Filt + Cond),CAP,3.772978967,TON
+Highway Vehicles,Dickenson,51051,PM2.5 Primary (Filt + Cond),CAP,3.768546512,TON
+Highway Vehicles,Tazewell,51185,Sulfur Dioxide,CAP,3.742150617,TON
+Highway Vehicles,Lunenburg,51111,PM2.5 Primary (Filt + Cond),CAP,3.731799834,TON
+Highway Vehicles,Brunswick,51025,Sulfur Dioxide,CAP,3.719846812,TON
+Highway Vehicles,Lunenburg,51111,Ammonia,CAP,3.702217082,TON
+Highway Vehicles,Southampton,51175,Sulfur Dioxide,CAP,3.697779655,TON
+Highway Vehicles,Manassas Park city,51685,PM10 Primary (Filt + Cond),CAP,3.467835919,TON
+Highway Vehicles,Covington city,51580,PM10 Primary (Filt + Cond),CAP,3.411208119,TON
+Highway Vehicles,Emporia city,51595,PM2.5 Primary (Filt + Cond),CAP,3.408651794,TON
+Highway Vehicles,Mathews,51115,PM10 Primary (Filt + Cond),CAP,3.386340812,TON
+Highway Vehicles,Rappahannock,51157,Ammonia,CAP,3.355724387,TON
+Highway Vehicles,Greensville,51081,Sulfur Dioxide,CAP,3.352468125,TON
+Highway Vehicles,Middlesex,51119,PM2.5 Primary (Filt + Cond),CAP,3.346116834,TON
+Highway Vehicles,Richmond,51159,PM2.5 Primary (Filt + Cond),CAP,3.312860369,TON
+Highway Vehicles,Petersburg city,51730,Sulfur Dioxide,CAP,3.311800708,TON
+Highway Vehicles,Surry,51181,PM10 Primary (Filt + Cond),CAP,3.285263428,TON
+Highway Vehicles,Northumberland,51133,PM2.5 Primary (Filt + Cond),CAP,3.268749282,TON
+Highway Vehicles,Martinsville city,51690,Ammonia,CAP,3.201451624,TON
+Highway Vehicles,Powhatan,51145,Sulfur Dioxide,CAP,3.200339799,TON
+Highway Vehicles,Cumberland,51049,Ammonia,CAP,3.192710697,TON
+Highway Vehicles,Hopewell city,51670,Ammonia,CAP,3.16745306,TON
+Highway Vehicles,Lancaster,51103,PM2.5 Primary (Filt + Cond),CAP,3.095971973,TON
+Highway Vehicles,Norton city,51720,PM10 Primary (Filt + Cond),CAP,3.06660249,TON
+Highway Vehicles,King George,51099,Sulfur Dioxide,CAP,3.047006668,TON
+Highway Vehicles,Cumberland,51049,PM2.5 Primary (Filt + Cond),CAP,3.029622275,TON
+Highway Vehicles,Bath,51017,PM10 Primary (Filt + Cond),CAP,3.007696591,TON
+Highway Vehicles,Bland,51021,Sulfur Dioxide,CAP,2.930587906,TON
+Highway Vehicles,Orange,51137,Sulfur Dioxide,CAP,2.855554251,TON
+Highway Vehicles,Charlottesville city,51540,Sulfur Dioxide,CAP,2.827280023,TON
+Highway Vehicles,Alleghany,51005,Sulfur Dioxide,CAP,2.820982113,TON
+Highway Vehicles,Emporia city,51595,Ammonia,CAP,2.816148297,TON
+Highway Vehicles,Russell,51167,Sulfur Dioxide,CAP,2.811738731,TON
+Highway Vehicles,Franklin city,51620,PM10 Primary (Filt + Cond),CAP,2.803523569,TON
+Highway Vehicles,Martinsville city,51690,PM2.5 Primary (Filt + Cond),CAP,2.754336177,TON
+Highway Vehicles,Clarke,51043,Sulfur Dioxide,CAP,2.735177995,TON
+Highway Vehicles,Rappahannock,51157,PM2.5 Primary (Filt + Cond),CAP,2.734073783,TON
+Highway Vehicles,Scott,51169,Sulfur Dioxide,CAP,2.705314315,TON
+Highway Vehicles,Radford city,51750,Ammonia,CAP,2.696377315,TON
+Highway Vehicles,Prince Edward,51147,Sulfur Dioxide,CAP,2.634498184,TON
+Highway Vehicles,Northampton,51131,Sulfur Dioxide,CAP,2.625418431,TON
+Highway Vehicles,Nelson,51125,Sulfur Dioxide,CAP,2.519157197,TON
+Highway Vehicles,Bristol city,51520,Sulfur Dioxide,CAP,2.509145863,TON
+Highway Vehicles,Craig,51045,PM10 Primary (Filt + Cond),CAP,2.479911489,TON
+Highway Vehicles,Mathews,51115,Ammonia,CAP,2.352814907,TON
+Highway Vehicles,Colonial Heights city,51570,Sulfur Dioxide,CAP,2.335093815,TON
+Highway Vehicles,Radford city,51750,PM2.5 Primary (Filt + Cond),CAP,2.313973219,TON
+Highway Vehicles,Charles city,51036,PM2.5 Primary (Filt + Cond),CAP,2.299184455,TON
+Highway Vehicles,Buena Vista city,51530,PM10 Primary (Filt + Cond),CAP,2.250337877,TON
+Highway Vehicles,Surry,51181,Ammonia,CAP,2.222585774,TON
+Highway Vehicles,Fairfax city,51600,Sulfur Dioxide,CAP,2.18318031,TON
+Highway Vehicles,Charles city,51036,Ammonia,CAP,2.179319589,TON
+Highway Vehicles,Nottoway,51135,Sulfur Dioxide,CAP,2.031492174,TON
+Highway Vehicles,Highland,51091,PM10 Primary (Filt + Cond),CAP,1.989375458,TON
+Highway Vehicles,Giles,51071,Sulfur Dioxide,CAP,1.987084945,TON
+Highway Vehicles,Surry,51181,PM2.5 Primary (Filt + Cond),CAP,1.967707774,TON
+Highway Vehicles,Galax city,51640,Ammonia,CAP,1.964150478,TON
+Highway Vehicles,Galax city,51640,PM2.5 Primary (Filt + Cond),CAP,1.953166589,TON
+Highway Vehicles,Buchanan,51027,Sulfur Dioxide,CAP,1.951007643,TON
+Highway Vehicles,Bath,51017,PM2.5 Primary (Filt + Cond),CAP,1.912399832,TON
+Highway Vehicles,Mathews,51115,PM2.5 Primary (Filt + Cond),CAP,1.866145781,TON
+Highway Vehicles,Madison,51113,Sulfur Dioxide,CAP,1.85382554,TON
+Highway Vehicles,Falls Church city,51610,PM2.5 Primary (Filt + Cond),CAP,1.853633876,TON
+Highway Vehicles,Manassas city,51683,Sulfur Dioxide,CAP,1.846581805,TON
+Highway Vehicles,Bath,51017,Ammonia,CAP,1.830908316,TON
+Highway Vehicles,Greene,51079,Sulfur Dioxide,CAP,1.800412302,TON
+Highway Vehicles,Fluvanna,51065,Sulfur Dioxide,CAP,1.7952518,TON
+Highway Vehicles,Lee,51105,Sulfur Dioxide,CAP,1.792010784,TON
+Highway Vehicles,Amelia,51007,Sulfur Dioxide,CAP,1.778034127,TON
+Highway Vehicles,Lexington city,51678,PM10 Primary (Filt + Cond),CAP,1.763763961,TON
+Highway Vehicles,Falls Church city,51610,Ammonia,CAP,1.75164177,TON
+Highway Vehicles,Salem city,51775,Sulfur Dioxide,CAP,1.738731969,TON
+Highway Vehicles,Page,51139,Sulfur Dioxide,CAP,1.722347201,TON
+Highway Vehicles,Appomattox,51011,Sulfur Dioxide,CAP,1.688409591,TON
+Highway Vehicles,Winchester city,51840,Sulfur Dioxide,CAP,1.66921026,TON
+Highway Vehicles,Covington city,51580,PM2.5 Primary (Filt + Cond),CAP,1.668668967,TON
+Highway Vehicles,Waynesboro city,51820,Sulfur Dioxide,CAP,1.657132024,TON
+Highway Vehicles,Williamsburg city,51830,Sulfur Dioxide,CAP,1.657004878,TON
+Highway Vehicles,Poquoson city,51735,Ammonia,CAP,1.604584277,TON
+Highway Vehicles,Norton city,51720,Ammonia,CAP,1.578831237,TON
+Highway Vehicles,Craig,51045,PM2.5 Primary (Filt + Cond),CAP,1.567161779,TON
+Highway Vehicles,Buckingham,51029,Sulfur Dioxide,CAP,1.523512989,TON
+Highway Vehicles,Patrick,51141,Sulfur Dioxide,CAP,1.506796118,TON
+Highway Vehicles,Essex,51057,Sulfur Dioxide,CAP,1.504742107,TON
+Highway Vehicles,Poquoson city,51735,PM2.5 Primary (Filt + Cond),CAP,1.482043511,TON
+Highway Vehicles,King William,51101,Sulfur Dioxide,CAP,1.460423735,TON
+Highway Vehicles,Norton city,51720,PM2.5 Primary (Filt + Cond),CAP,1.41420793,TON
+Highway Vehicles,Staunton city,51790,Sulfur Dioxide,CAP,1.404034375,TON
+Highway Vehicles,Craig,51045,Ammonia,CAP,1.384685931,TON
+Highway Vehicles,Charlotte,51037,Sulfur Dioxide,CAP,1.346102004,TON
+Highway Vehicles,Highland,51091,PM2.5 Primary (Filt + Cond),CAP,1.340955534,TON
+Highway Vehicles,Westmoreland,51193,Sulfur Dioxide,CAP,1.328539305,TON
+Highway Vehicles,Covington city,51580,Ammonia,CAP,1.306235569,TON
+Highway Vehicles,Manassas Park city,51685,PM2.5 Primary (Filt + Cond),CAP,1.262731718,TON
+Highway Vehicles,Floyd,51063,Sulfur Dioxide,CAP,1.21160214,TON
+Highway Vehicles,Grayson,51077,Sulfur Dioxide,CAP,1.176422435,TON
+Highway Vehicles,Franklin city,51620,PM2.5 Primary (Filt + Cond),CAP,1.161844624,TON
+Highway Vehicles,Middlesex,51119,Sulfur Dioxide,CAP,1.152931892,TON
+Highway Vehicles,Franklin city,51620,Ammonia,CAP,1.142725509,TON
+Highway Vehicles,Highland,51091,Ammonia,CAP,1.104986699,TON
+Highway Vehicles,Richmond,51159,Sulfur Dioxide,CAP,1.10472076,TON
+Highway Vehicles,Dickenson,51051,Sulfur Dioxide,CAP,1.069997888,TON
+Highway Vehicles,Buena Vista city,51530,PM2.5 Primary (Filt + Cond),CAP,1.063067363,TON
+Highway Vehicles,Northumberland,51133,Sulfur Dioxide,CAP,1.053639689,TON
+Highway Vehicles,Hopewell city,51670,Sulfur Dioxide,CAP,1.053278901,TON
+Highway Vehicles,King and Queen,51097,Sulfur Dioxide,CAP,1.042623201,TON
+Highway Vehicles,Lancaster,51103,Sulfur Dioxide,CAP,1.024600792,TON
+Highway Vehicles,Manassas Park city,51685,Ammonia,CAP,.95683628246712,TON
+Highway Vehicles,Martinsville city,51690,Sulfur Dioxide,CAP,.94814312046726,TON
+Highway Vehicles,Lunenburg,51111,Sulfur Dioxide,CAP,.9054841543949,TON
+Highway Vehicles,Rappahannock,51157,Sulfur Dioxide,CAP,.8769996959844,TON
+Highway Vehicles,Buena Vista city,51530,Ammonia,CAP,.841175683046676,TON
+Highway Vehicles,Emporia city,51595,Sulfur Dioxide,CAP,.808112833737,TON
+Highway Vehicles,Radford city,51750,Sulfur Dioxide,CAP,.789297531747016,TON
+Highway Vehicles,Cumberland,51049,Sulfur Dioxide,CAP,.7754379519826,TON
+Highway Vehicles,Falls Church city,51610,Sulfur Dioxide,CAP,.733276873928,TON
+Highway Vehicles,Lexington city,51678,Ammonia,CAP,.694928119583,TON
+Highway Vehicles,Lexington city,51678,PM2.5 Primary (Filt + Cond),CAP,.67198897081,TON
+Highway Vehicles,Mathews,51115,Sulfur Dioxide,CAP,.6309846768268874,TON
+Highway Vehicles,Poquoson city,51735,Sulfur Dioxide,CAP,.59147732504363,TON
+Highway Vehicles,Surry,51181,Sulfur Dioxide,CAP,.589366095393,TON
+Highway Vehicles,Galax city,51640,Sulfur Dioxide,CAP,.584682572951329,TON
+Highway Vehicles,Charles city,51036,Sulfur Dioxide,CAP,.5454165648395,TON
+Highway Vehicles,Bath,51017,Sulfur Dioxide,CAP,.483094043954,TON
+Highway Vehicles,Norton city,51720,Sulfur Dioxide,CAP,.471337604293562,TON
+Highway Vehicles,Covington city,51580,Sulfur Dioxide,CAP,.400108842272,TON
+Highway Vehicles,Manassas Park city,51685,Sulfur Dioxide,CAP,.38875019089385,TON
+Highway Vehicles,Franklin city,51620,Sulfur Dioxide,CAP,.35285975644193,TON
+Highway Vehicles,Craig,51045,Sulfur Dioxide,CAP,.3490726916445,TON
+Highway Vehicles,Highland,51091,Sulfur Dioxide,CAP,.2688657176264,TON
+Highway Vehicles,Buena Vista city,51530,Sulfur Dioxide,CAP,.247042321228726,TON
+Highway Vehicles,Lexington city,51678,Sulfur Dioxide,CAP,.232743298427,TON
