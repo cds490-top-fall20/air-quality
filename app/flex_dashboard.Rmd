@@ -18,10 +18,10 @@ suppressPackageStartupMessages(library(leafpop))
 suppressPackageStartupMessages(library(DT))
 suppressPackageStartupMessages(library(flexdashboard))
 
-full_data <- read_rds("../data/processed/counties_mapping_data_simplified.rds") %>% 
-  filter(
-    state_name == "Virginia"
-  )
+full_data <- read_rds("../data/processed/counties_mapping_data_simplified.rds")# %>% 
+#  filter(
+#    state_name == "Virginia"
+#  )
 ```
 
 
@@ -34,24 +34,32 @@ Inputs {.sidebar}
 ### Customize
 
 ```{r}
-selectInput("state", "Choose a state:",
-      list(`East Coast` = list("VA", "NJ", "CT"),
-           `West Coast` = list("WA", "OR", "CA"),
-           `Midwest` = list("MN", "WI", "IA"))
+
+selectInput("State", "Choose a state:",
+      full_data$state_name
     )
+
+map_data <- reactive({
+  filter(
+  full_data,
+  state_name == input$State
+  )
+}
+)
 ```
 
 
 ```{r}
-varSelectInput(
-  "Grade", 
-  "What grade would you like to View?", 
-  tibble(
-    "Pollutant Grade" = full_data$`Pollutant Grade`, 
-    "Ozone Grade" = full_data$`Ozone Grade`,
-    "Annual Pass/Fail" = full_data$`Annual Pass/Fail`
-    )
-  )
+ selectInput(
+   "Grade",
+   "What grade would you like to View?",
+   list(
+     "Pollutant Grade",
+     "Ozone Grade",
+     "Annual Pass/Fail"
+     ),
+   selected = "Pollutant Grade"
+   )
 ```
 
 
@@ -71,17 +79,17 @@ Row 1 {data-height=650}
 ### Map
 
 ```{r}
-
 renderLeaflet(
   {
-    factpal <- colorFactor(c("yellow", "green"), full_data$`Pollutant Grade`)
+    factpal <- colorFactor(c("yellow", "green"), map_data()$`Pollutant Grade`)
     
-    leaflet(full_data) %>% 
-      addProviderTiles("Esri.WorldGrayCanvas") %>% 
+    leaflet(map_data()) %>% 
+      addTiles %>%
+      addProviderTiles("SafeCast") %>% 
       addPolygons(
         # data = shape,
         label = ~county_name,
-        fillColor = ~ factpal(full_data$`Pollutant Grade`),
+        fillColor = ~ factpal(map_data()$`Pollutant Grade`),
         # layerId = ~COUNTYNS,
         opacity = 1,
         weight = 1,
@@ -89,11 +97,11 @@ renderLeaflet(
         dashArray = "3",
         fillOpacity = 0.5,
         popup = paste(
-          "County:", full_data$county_name,"<br>",
-          "Selected Grade:", full_data[[input$Grade]] ,"<br>",
-          "Amount of People Who Commute In:", full_data$commute_into,"<br>",
-          "Amount of People who Commute Out:", full_data$commute_out,"<br>",
-          "Amount of People who Commute Within:", full_data$commute_within
+          "County:", map_data()$county_name,"<br>",
+          "Selected Grade:", map_data()[[input$Grade]] ,"<br>",
+          "Amount of People Who Commute In:", map_data()$commute_into,"<br>",
+          "Amount of People who Commute Out:", map_data()$commute_out,"<br>",
+          "Amount of People who Commute Within:", map_data()$commute_within
           ),
         highlight = highlightOptions(
           weight = 5,
@@ -150,20 +158,34 @@ Inputs {.sidebar}
 ### Pick two counties
 
 ```{r}
-selectInput("state1", "Choose a state:",
-      list(`East Coast` = list("Fairfax County", "NJ", "CT"),
-           `West Coast` = list("WA", "OR", "CA"),
-           `Midwest` = list("MN", "WI", "IA"))
+selectInput("State1", "Choose a state:",
+      full_data$state_name
     )
+
+map_data1 <- reactive({
+  filter(
+  full_data,
+  state_name == input$State
+  )
+}
+)
 ```
 
 ```{r}
-selectInput("state2", "Choose a state:",
-      list(`East Coast` = list("Arlington County", "NJ", "CT"),
-           `West Coast` = list("WA", "OR", "CA"),
-           `Midwest` = list("MN", "WI", "IA"))
+selectInput("State2", "Choose a state:",
+      full_data$state_name
     )
+
+map_data2 <- reactive({
+  filter(
+  full_data,
+  state_name == input$State
+  )
+}
+)
 ```
+
+
 
 Row 1
 ------------
@@ -171,6 +193,49 @@ Row 1
 ### County 1
 
 * Information about county 1
+```{r}
+renderLeaflet(
+  {
+    factpal1 <- colorFactor(c("yellow", "green"), map_data1()$`Pollutant Grade`)
+    
+    leaflet(map_data1()) %>% 
+      addTiles %>%
+      addProviderTiles("Esri.WorldGrayCanvas") %>% 
+      addPolygons(
+        # data = shape,
+        label = ~county_name,
+        fillColor = ~ factpal1(map_data1()$`Pollutant Grade`),
+        # layerId = ~COUNTYNS,
+        opacity = 1,
+        weight = 1,
+        color = "white",
+        dashArray = "3",
+        fillOpacity = 0.5,
+        popup = paste(
+          "County:", map_data1()$county_name,"<br>",
+          "Selected Grade:", map_data1()[[input$Grade]] ,"<br>",
+          "Amount of People Who Commute In:", map_data1()$commute_into,"<br>",
+          "Amount of People who Commute Out:", map_data1()$commute_out,"<br>",
+          "Amount of People who Commute Within:", map_data1()$commute_within
+          ),
+        highlight = highlightOptions(
+          weight = 5,
+          color = "#666",
+          dashArray = "",
+          fillOpacity = 0.7,
+          bringToFront = TRUE
+          )
+        ) %>% 
+      addLegend(
+        pal = factpal1, 
+        values = ~`Pollutant Grade`, 
+        opacity = 0.7, 
+        title = NULL,
+        position = "bottomright"
+        )
+  }
+)
+```
 
 Row 2
 ------------
@@ -178,6 +243,50 @@ Row 2
 ### County 2
 
 * Information about county 2
+```{r}
+renderLeaflet(
+  {
+    factpal2 <- colorFactor(c("yellow", "green"), map_data2()$`Pollutant Grade`)
+    
+    leaflet(map_data2()) %>% 
+      addTiles %>%
+      addProviderTiles("Esri.WorldGrayCanvas") %>% 
+      addPolygons(
+        # data = shape,
+        label = ~county_name,
+        fillColor = ~ factpal2(map_data2()$`Pollutant Grade`),
+        # layerId = ~COUNTYNS,
+        opacity = 1,
+        weight = 1,
+        color = "white",
+        dashArray = "3",
+        fillOpacity = 0.5,
+        popup = paste(
+          "County:", map_data2()$county_name,"<br>",
+          "Selected Grade:", map_data2()[[input$Grade]] ,"<br>",
+          "Amount of People Who Commute In:", map_data2()$commute_into,"<br>",
+          "Amount of People who Commute Out:", map_data2()$commute_out,"<br>",
+          "Amount of People who Commute Within:", map_data2()$commute_within
+          ),
+        highlight = highlightOptions(
+          weight = 5,
+          color = "#666",
+          dashArray = "",
+          fillOpacity = 0.7,
+          bringToFront = TRUE
+          )
+        ) %>% 
+      addLegend(
+        pal = factpal2, 
+        values = ~`Pollutant Grade`, 
+        opacity = 0.7, 
+        title = NULL,
+        position = "bottomright"
+        )
+    }
+  )
+    
+```
 
 
 Data
