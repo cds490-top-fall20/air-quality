@@ -43,6 +43,7 @@ full_data <- read_rds("data/counties_mapping_data_simplified.rds") %>%
     `Annual Pass/Fail` = factor(`Annual Pass/Fail`,c("PASS","FAIL"))
   )
 metros <- read_rds("data/urban_areas_simplified.rds")
+state_coords <- read_csv("data/state_coords.csv")
 ```
 
 
@@ -55,14 +56,24 @@ Inputs {.sidebar}
 ### Customize
 
 ```{r}
-selectInput("state", "Choose a state:", full_data$state_name)
+state_names <- sort(unique(full_data$state_name))
+selectInput(
+  "state", 
+  "Choose 1 or more US states to show:", 
+  state_names,
+  selected = "Virginia",
+  multiple = TRUE
+  )
 ```
 
 ```{r}
 map_data <- reactive({
+  if(is.null(input$state)) {
+    return(full_data)
+  }
   full_data %>% 
      filter(
-        state_name == input$state
+        state_name %in% input$state
       )
   })
 ```
@@ -87,13 +98,12 @@ Row 1 {data-height=650}
 
 
 ```{r}
-
-renderLeaflet(
+output$sotaMap <- renderLeaflet(
   {
     factpal <- colorFactor(c("forestgreen","gold","firebrick1"), levels = levels(full_data[[input$Grade]]), na.color = "grey", ordered = T)
 
     leaflet(map_data()) %>% 
-      setView(-77.8, 37.8, 7) %>%
+      setView(-98.585522, 39.8333333, 4) %>%
       addProviderTiles("Esri.WorldGrayCanvas") %>%
       addMapPane("metro_areas", zIndex = 400) %>%
       addMapPane("pollution_counties", zIndex = 420) %>%
@@ -108,7 +118,7 @@ renderLeaflet(
       addPolygons(
         # data = shape,
         label = ~county_name,
-        fillColor = ~ factpal(map_data[[input$Grade]]),
+        fillColor = ~ factpal(map_data()[[input$Grade]]),
         layerId = ~GEOID,
         opacity = 1,
         weight = 1,
@@ -148,6 +158,7 @@ renderLeaflet(
       )
     }
   )
+leafletOutput("sotaMap")
 ```
 
 
@@ -162,7 +173,7 @@ Row 2 {data-height=350}
 clicked_county <- reactive({
   # print(input$sotaMap_shape_click)
   if (is.null(input$sotaMap_shape_click$id) == FALSE){
-    county_stats <- map_data %>%
+    county_stats <- map_data() %>%
       filter(GEOID == input$sotaMap_shape_click$id)
     return(HTML(
       "County information for:", county_stats$county_name,
