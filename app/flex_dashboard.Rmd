@@ -19,6 +19,7 @@ suppressPackageStartupMessages(library(DT))
 suppressPackageStartupMessages(library(flexdashboard))
 suppressPackageStartupMessages(library(RColorBrewer))
 
+
 full_data <- read_rds("data/counties_mapping_data_simplified.rds") %>% 
   mutate(
     `Pollutant Grade` = case_when(
@@ -42,10 +43,6 @@ full_data <- read_rds("data/counties_mapping_data_simplified.rds") %>%
     `Annual Pass/Fail` = factor(`Annual Pass/Fail`,c("PASS","FAIL"))
   )
 metros <- read_rds("data/urban_areas_simplified.rds")
-map_data <- full_data %>% 
-      filter(
-        state_name == "Virginia"
-      )
 ```
 
 
@@ -58,12 +55,17 @@ Inputs {.sidebar}
 ### Customize
 
 ```{r}
-selectInput("state", "Choose a state:",
-      full_data$state_name,
-      selected = "Virginia"
-    )
+selectInput("state", "Choose a state:", full_data$state_name)
 ```
 
+```{r}
+map_data <- reactive({
+  full_data %>% 
+     filter(
+        state_name == input$state
+      )
+  })
+```
 
 ```{r}
 selectInput(
@@ -77,6 +79,7 @@ selectInput(
 
 
 
+
 Row 1 {data-height=650}
 -----------------------------------------------------------------------
 
@@ -84,11 +87,12 @@ Row 1 {data-height=650}
 
 
 ```{r}
-output$sotaMap <- renderLeaflet(
-  {
-    factpal <- colorFactor(c("forestgreen","gold","firebrick1"), levels = levels(full_data[[input$Grade]]),na.color = "grey")
 
-    leaflet(map_data) %>% 
+renderLeaflet(
+  {
+    factpal <- colorFactor(c("forestgreen","gold","firebrick1"), levels = levels(full_data[[input$Grade]]), na.color = "grey", ordered = T)
+
+    leaflet(map_data()) %>% 
       setView(-77.8, 37.8, 7) %>%
       addProviderTiles("Esri.WorldGrayCanvas") %>%
       addMapPane("metro_areas", zIndex = 400) %>%
@@ -111,11 +115,9 @@ output$sotaMap <- renderLeaflet(
         color = "white",
         dashArray = "3",
         fillOpacity = 0.5,
-        # bringToFront = TRUE,
-        options = pathOptions(pane = "pollution_counties"),
         popup = paste(
-          "County:", map_data$county_name,"<br>",
-          input$Grade, ":", map_data[[input$Grade]] ,"<br>"
+          "County:", full_data$county_name,"<br>",
+          "Selected Grade:", full_data[[input$Grade]] ,"<br>"
           ),
         highlight = highlightOptions(
           weight = 5,
@@ -146,12 +148,12 @@ output$sotaMap <- renderLeaflet(
       )
     }
   )
-leafletOutput("sotaMap")
 ```
 
 
 Row 2 {data-height=350}
 -------
+
 
 
 ### County stats
@@ -182,14 +184,14 @@ renderUI(clicked_county())
 
 <!-- Possible information to go here: -->
 
-<!-- * county grades -->
+* county grades
 
-<!-- * transportation emission statistics -->
+* transportation emission statistics
 
-<!-- * housing information -->
+* housing information
 
-<!-- * commuting information -->
-
+* commuting information
+    
 ### Another box
 
 Ideas for content:
@@ -197,7 +199,6 @@ Ideas for content:
 * Glossary/definitions?
 * About the dashboard/ about us?
 * Another visualization?
-
 
 
 
@@ -209,7 +210,6 @@ Inputs {.sidebar}
 
 ### Pick two counties
 ```{r}
-
 county_list <- full_data$GEOID
 
 names(county_list) <- paste(full_data$county_name, full_data$state_name, sep = ", ")
@@ -237,13 +237,6 @@ renderValueBox({
            icon = "ion-fireball")
 })
 ```
-
-```{r}
-# full_data %>%
-#   filter(GEOID == input$county1) %>%
-#   pluck(median_rent)
-```
-
 
 Row 2
 ------------
@@ -284,11 +277,9 @@ DT::renderDataTable({
     filter(state_name == input$datatable_state )%>%
     datatable()
 })
-
 ```
 
 
 About
 ======
-
 
