@@ -40,16 +40,37 @@ for (r in 1:nrow(sota_2020)){
   matching_row <- national_counties %>%
     filter(
       str_detect(state_name, sota_2020$State[r]),
-      str_detect(county_name, sota_2020$County[r])
+      str_detect(
+        str_to_lower(county_name), 
+        str_to_lower(sota_2020$County[r])
+      )
     )
   # print(matching_row)
   if(nrow(matching_row) == 1) {
     county_fips[r] <- matching_row$GEOID
+  } else if(nrow(matching_row) > 1) {
+    matching_row2 <- matching_row %>%
+      filter(
+        str_detect(state_name, sota_2020$State[r]),
+        str_detect(
+          str_to_lower(county_name), 
+          str_to_lower(paste(sota_2020$County[r], "County"))
+        )
+      )
+    if(nrow(matching_row2) == 1) {
+      county_fips[r] <- matching_row2$GEOID
+    }else{
+      county_fips[r] <- NA
+    }
   } else{
     county_fips[r] <- NA
   }
 }
 sota_2020$GEOID <- county_fips
+sota_2020 <- select(
+  sota_2020,
+  GEOID, County, State, `Ozone Grade`, `Pollutant Grade`, `Annual Pass/Fail`, everything()
+)
 
 
 ## Data from Bureau of Transportation Statistics, downloaded from
@@ -91,7 +112,7 @@ final_df <- census_plus_sota %>%
   left_join(trans_2.5, by = "GEOID") %>%
   left_join(trans_nox, by = "GEOID")
 
-saveRDS(final_df, "app/data/processed/counties_mapping_data_simplified.rds")
+saveRDS(final_df, "app/data/counties_mapping_data_simplified.rds")
 
 
 #############################
@@ -118,4 +139,32 @@ urban %>%
   rmapshaper::ms_simplify(keep = 0.1) %>%
   saveRDS("app/data/urban_areas_simplified.rds")
 
+
+#################################
+# Process EPA monitor locations #
+#################################
+
+# Data scource: http://files.airnowtech.org/?prefix=airnow/2019/20191231/
+# Schema: https://docs.airnowapi.org/docs/MonitoringSiteFactSheet.pdf
+
+epa_sites <- read_delim("~/Downloads/monitoring_site_locations.dat", "|", col_names=F) %>%
+  select(
+    id = X1,
+    pollutant = X2,
+    status = X5,
+    lat = X9,
+    long = X10
+  )
+epa_sites %>%
+  filter(
+    pollutant == "PM2.5" | pollutant == "O3"#, status == "Active"
+  ) %>%
+  pivot_wider(
+    names_from = pollutant,
+    values_from = id
+  ) %>%
+  select(
+    lat, long
+  ) %>%
+  saveRDS("app/data/epa_sensor_locations.rds")
 
