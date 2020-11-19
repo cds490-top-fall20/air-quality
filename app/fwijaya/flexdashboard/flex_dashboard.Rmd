@@ -1,0 +1,281 @@
+---
+title: "App Name Here"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+    source_code: "https://github.com/cds490-top-fall20/air-quality"
+runtime: shiny
+---
+
+```{r global, include=FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(shiny))
+suppressPackageStartupMessages(library(leaflet))
+suppressPackageStartupMessages(library(sf))
+suppressPackageStartupMessages(library(reshape2))
+suppressPackageStartupMessages(library(leafpop))
+suppressPackageStartupMessages(library(DT))
+suppressPackageStartupMessages(library(flexdashboard))
+suppressPackageStartupMessages(library(janitor))
+
+full_data <- clean_names(read_rds("data/counties_mapping_data_simplified.rds"))
+```
+
+
+Map
+================================================================================
+
+Inputs {.sidebar}
+--------------------------------------------------------------------------------
+
+### Customize
+
+```{r}
+selectInput("state", "Choose a state:",
+      list(`East Coast` = list("VA", "NJ", "CT"),
+           `West Coast` = list("WA", "OR", "CA"),
+           `Midwest` = list("MN", "WI", "IA"))
+    )
+```
+
+
+```{r}
+varSelectInput(
+  "Grade", 
+  "What grade would you like to View?", 
+  tibble(
+    "Pollutant Grade" = full_data$pollutant_grade, 
+    "Ozone Grade" = full_data$ozone_grade,
+    "Annual Pass/Fail" = full_data$annual_pass_fail
+    )
+  )
+```
+
+
+**Optional Overlays**
+
+```{r}
+checkboxInput("inputId1", "Aiports", value = FALSE, width = NULL)
+checkboxInput("inputId2", "Ports", value = FALSE, width = NULL)
+checkboxInput("inputId", "Show metro areas", value = FALSE, width = NULL)
+```
+
+
+
+Row 1 {data-height=650}
+--------------------------------------------------------------------------------
+
+### Map
+
+```{r}
+renderLeaflet(
+  {
+    factpal <- colorFactor(c("yellow", "green"), full_data$pollutant_grade)
+    
+    leaflet(full_data) %>% 
+      addProviderTiles("Esri.WorldGrayCanvas") %>% 
+      addPolygons(
+        # data = shape,
+        label = ~county_name,
+        fillColor = ~ factpal(full_data$pollutant_grade),
+        # layerId = ~COUNTYNS,
+        opacity = 1,
+        weight = 1,
+        color = "white",
+        dashArray = "3",
+        fillOpacity = 0.5,
+        popup = paste(
+          "County:", full_data$county_name,"<br>",
+          "Selected Grade:", full_data[[input$Grade]] ,"<br>",
+          "Amount of People Who Commute In:", full_data$commute_into,"<br>",
+          "Amount of People who Commute Out:", full_data$commute_out,"<br>",
+          "Amount of People who Commute Within:", full_data$commute_within
+          ),
+        highlight = highlightOptions(
+          weight = 5,
+          color = "#666",
+          dashArray = "",
+          fillOpacity = 0.7,
+          bringToFront = TRUE
+          )
+        ) %>% 
+      addLegend(
+        pal = factpal, 
+        values = ~pollutant_grade, 
+        opacity = 0.7, 
+        title = NULL,
+        position = "bottomright"
+        )
+    }
+  )
+```
+
+
+Row 2 {data-height=350}
+--------------------------------------------------------------------------------
+
+
+### <Name of Information Box>
+    
+Possible information to go here:
+
+* county grades
+
+* transportation emission statistics
+
+* housing information
+
+* commuting information
+    
+### Another box
+
+Ideas for content:
+
+* Glossary/definitions?
+* About the dashboard/ about us
+* Another visualization
+
+
+
+Compare
+================================================================================
+
+Inputs {.sidebar}
+--------------------------------------------------------------------------------
+
+### Pick two counties
+
+```{r}
+selectInput("county1", "Choose a county:",
+      full_data$county_name
+    )
+```
+
+```{r}
+selectInput("county2", "Choose a county to compare against:",
+      full_data$county_name
+    )
+```
+
+Row 1
+--------------------------------------------------------------------------------
+
+### County 1
+
+```{r}
+location1 <- reactive({
+  filter(
+    full_data,
+    state_name == input$county1
+  )
+})
+
+renderLeaflet(
+  {
+    factpal <- colorFactor(c("yellow", "green"), location1()$pollutant_grade)
+    
+    leaflet(full_data) %>% 
+      addProviderTiles("Esri.WorldGrayCanvas") %>% 
+      addPolygons(
+        # data = shape,
+        label = ~county_name,
+        fillColor = ~ factpallocation1()$pollutant_grade),
+        # layerId = ~COUNTYNS,
+        opacity = 1,
+        weight = 1,
+        color = "white",
+        dashArray = "3",
+        fillOpacity = 0.5,
+        popup = paste(
+          "County:", location1()$county_name,"<br>",
+          "Selected Grade:", location1()$[[input$Grade]] ,"<br>",
+          "Amount of People Who Commute In:", location1()$commute_into,"<br>",
+          "Amount of People who Commute Out:", location1()$commute_out,"<br>",
+          "Amount of People who Commute Within:", location1()$commute_within
+          ),
+        highlight = highlightOptions(
+          weight = 5,
+          color = "#666",
+          dashArray = "",
+          fillOpacity = 0.7,
+          bringToFront = TRUE
+          )
+        ) %>% 
+      addLegend(
+        pal = factpal, 
+        values = ~location1()$pollutant_grade, 
+        opacity = 0.7, 
+        title = NULL,
+        position = "bottomright"
+        )
+    }
+  )
+```
+
+Row 2
+--------------------------------------------------------------------------------
+
+### County 2
+
+```{r}
+uiOutput("dynamicmap2")
+
+output$dynamicmap2 <- renderLeaflet(
+  {
+    factpal <- colorFactor(c("yellow", "green"), full_data$pollutant_grade)
+    
+    leaflet(full_data) %>% 
+      addProviderTiles("Esri.WorldGrayCanvas") %>% 
+      addPolygons(
+        # data = shape,
+        label = ~county_name,
+        fillColor = ~ factpal(full_data$pollutant_grade),
+        # layerId = ~COUNTYNS,
+        opacity = 1,
+        weight = 1,
+        color = "white",
+        dashArray = "3",
+        fillOpacity = 0.5,
+        popup = paste(
+          "County:", full_data$county_name,"<br>",
+          "Selected Grade:", full_data[[input$Grade]] ,"<br>",
+          "Amount of People Who Commute In:", full_data$commute_into,"<br>",
+          "Amount of People who Commute Out:", full_data$commute_out,"<br>",
+          "Amount of People who Commute Within:", full_data$commute_within
+          ),
+        highlight = highlightOptions(
+          weight = 5,
+          color = "#666",
+          dashArray = "",
+          fillOpacity = 0.7,
+          bringToFront = TRUE
+          )
+        ) %>% 
+      addLegend(
+        pal = factpal, 
+        values = ~pollutant_grade, 
+        opacity = 0.7, 
+        title = NULL,
+        position = "bottomright"
+        )
+    }
+  )
+```
+
+
+Data
+================================================================================
+
+## Row 1
+
+### Data
+
+
+```{r}
+DT::renderDataTable({
+  data <- head(full_data, n = input$maxrows)
+  DT::datatable(data, options = list(
+    pageLength = 25 #bPaginate = FALSE
+  ))
+})
