@@ -5,6 +5,7 @@ output:
     orientation: rows
     vertical_layout: fill
     source_code: "https://github.com/cds490-top-fall20/air-quality"
+    theme: cerulean
 runtime: shiny
 ---
 
@@ -37,10 +38,10 @@ full_data <- read_rds("data/counties_mapping_data_simplified.rds") %>%
       `Annual Pass/Fail` == "INC" ~ NA_character_,
       TRUE ~ `Annual Pass/Fail`,
     ),
-    `Pollutant Grade` = as.factor(`Pollutant Grade`),
+    `Particle Pollution Grade` = as.factor(`Pollutant Grade`),
     `Ozone Grade` = as.factor(`Ozone Grade`),
     # `Annual Pass/Fail` = as.factor(`Annual Pass/Fail`),
-    `Annual Pass/Fail` = factor(`Annual Pass/Fail`,c("PASS","FAIL"))
+    `Annual Pass/Fail` = factor(`Annual Pass/Fail`, c("PASS","FAIL"))
   )
 metros <- read_rds("data/urban_areas_simplified.rds")
 state_coords <- read_csv("data/state_coords.csv")
@@ -52,6 +53,12 @@ Map
 
 Inputs {.sidebar}
 -----------------------------------------------------------------------
+
+Want to live somewhere with cleaner air?
+
+This dashboard shows the air quality in US counties, alongside transportation emissions, compared to housing
+statistics (e.g. house price and rent).
+
 
 ### Customize
 
@@ -82,13 +89,15 @@ map_data <- reactive({
 selectInput(
   "Grade", 
   "What grade would you like to View?", 
-  choices=c("Pollutant Grade"="Pollutant Grade",
+  choices=c("Particle Pollution Grade"="Particle Pollution Grade",
             "Ozone Grade"="Ozone Grade",      
             "Annual Pass/Fail"="Annual Pass/Fail"))
 
 ```
 
+Air quality grades are sourced from the National Lung Association's [State of the Air Report](https://www.stateoftheair.org/) for 2019.
 
+Note: many counties do not have air quality sensors, and lack a grade.
 
 
 Row 1 {data-height=650}
@@ -176,14 +185,14 @@ clicked_county <- reactive({
     county_stats <- map_data() %>%
       filter(GEOID == input$sotaMap_shape_click$id)
     return(HTML(
-      "County information for:", county_stats$county_name,
-      "<br>Median house price: $", county_stats$median_house_value,
-      "<br>Median rent: $", county_stats$median_rent,
-      "<br>% of People who commute in:", 
+      "<b>County information for:</b>", county_stats$county_name,
+      "<br><b>Median house price: $</b>", county_stats$median_house_value,
+      "<br><b>Median rent: $</b>", county_stats$median_rent,
+      "<br><b>% of People who commute into this county:</b>", 
       round(100 * county_stats$commute_within / county_stats$num_residents),
-      "<br>% of People who commute to other counties:", 
+      "<br><b>% of People who commute to other counties:</b>", 
       round(100 * county_stats$commute_out / county_stats$num_residents),
-      "<br>% of People who commute within county:", 
+      "<br><b>% of People who commute within county:</b>", 
       round(100 * county_stats$commute_within / county_stats$num_residents)
       ))
   }
@@ -192,25 +201,17 @@ clicked_county <- reactive({
 renderUI(clicked_county())
 ```
 
-
-<!-- Possible information to go here: -->
-
-* county grades
-
-* transportation emission statistics
-
-* housing information
-
-* commuting information
     
-### Another box
+### Why should you care?
 
-Ideas for content:
+* Pollution from transportation has a large effect on air quality (but other factors also affect air quality).
 
-* Glossary/definitions?
-* About the dashboard/ about us?
-* Another visualization?
+* Poor air quality can have a large impact on health.
 
+* Pollution Grades
+  * Particle Pollution: grade based on average PM2.5 concentration (breathable particles smaller than 2.5 micrometers)
+  * Ozone: grade based on average ozone concentration
+  * Annual Pass/Fail: counties with air quality levels better than the EPA's National Ambient Air Quality Standard receive a passing grade
 
 
 Compare
@@ -219,47 +220,184 @@ Compare
 Inputs {.sidebar}
 -----------------------------------------------------------------------
 
+Select 2 counties to compare air quality and housing statistics for those
+counties.
+
 ### Pick two counties
 ```{r}
 county_list <- full_data$GEOID
 
 names(county_list) <- paste(full_data$county_name, full_data$state_name, sep = ", ")
-
+county_list <- county_list[order(names(county_list))]
 ```
 
 ```{r}
-selectInput("county1", "Choose county 1:", county_list)
-```
+selectInput("county1", "Choose first county to compare:", county_list)
 
-```{r}
-selectInput("county2", "Choose county 2:",county_list)
-```
-
-Row 1
-------------
-
-### County 1
-
-```{r}
-renderValueBox({
-  articles <- filter(full_data, GEOID == input$county1)
-  value <- as.numeric(articles$transportation_pm2.5)
-  valueBox(round(value, digits = 3), " Tons of pm 2.5 Pollution per day for county 1.",
-           icon = "ion-fireball")
+county1_df <- reactive({
+  filter(full_data, GEOID == input$county1)
 })
 ```
 
-Row 2
+```{r}
+selectInput("county2", "Choose second county to compare:", county_list)
+
+county2_df <- reactive({
+  filter(full_data, GEOID == input$county2)
+})
+```
+
+```{r}
+particle_pal <- colorFactor(c("forestgreen","gold","firebrick1"), levels = levels(full_data$`Particle Pollution Grade`), na.color = "grey", ordered = T)
+ozone_pal <- colorFactor(c("forestgreen","gold","firebrick1"), levels = levels(full_data$`Ozone Grade`), na.color = "grey", ordered = T)
+passfail_pal <- colorFactor(c("forestgreen","gold","firebrick1"), levels = levels(full_data$`Annual Pass/Fail`), na.color = "grey", ordered = T)
+
+max_house_price <- max(full_data$median_house_value, na.rm = TRUE)
+max_rent <- max(full_data$median_rent, na.rm = TRUE)
+```
+
+
+
+Row 1, County 1
 ------------
 
-### County 2
+### Particle Pollution Grade
 
 ```{r}
 renderValueBox({
-  articles <- filter(full_data, GEOID == input$county2)
-  value <- as.numeric(articles$transportation_pm2.5)
-  valueBox(round(value, digits = 3), " Tons of pm 2.5 Pollution per day for county 2.",
-           icon = "ion-fireball")
+  value <- county1_df()$`Particle Pollution Grade`
+  valueBox(value, " Particle Pollution Grade",
+           icon = "ion-fireball",
+           color = particle_pal(value))
+})
+```
+
+### Ozone Grade
+
+```{r}
+renderValueBox({
+  value <- county1_df()$`Ozone Grade`
+  valueBox(value, " Ozone Grade",
+           icon = "ion-fireball",
+           color = ozone_pal(value))
+})
+```
+
+### Annual Pass/Fail
+
+```{r}
+renderValueBox({
+  value <- county1_df()$`Annual Pass/Fail`
+  valueBox(value, " Annual Pass/Fail Grade",
+           icon = "ion-fireball",
+           color = passfail_pal(value))
+})
+```
+
+
+### Average house price
+
+```{r}
+renderGauge({
+  rate <- county1_df()$median_house_value
+  gauge(
+    rate, 
+    min = 0, max = max_house_price, 
+    symbol = '$', 
+    gaugeSectors(
+      success = c(0, max_house_price * 0.25), 
+      warning = c(max_house_price * 0.25, max_house_price * 0.75), 
+      danger = c(max_house_price * 0.75, max_house_price)
+  ))
+})
+```
+
+### Average rent
+
+```{r}
+renderGauge({
+  rate <- county1_df()$median_rent
+  gauge(
+    rate, 
+    min = 0, max = max_rent, 
+    symbol = '$', 
+    gaugeSectors(
+      success = c(0, max_rent * 0.25), 
+      warning = c(max_rent * 0.25, max_rent * 0.75), 
+      danger = c(max_rent * 0.75, max_rent)
+  ))
+})
+```
+
+
+Row 2, County 2
+------------
+
+### Particle Pollution Grade
+
+```{r}
+renderValueBox({
+  value <- county2_df()$`Particle Pollution Grade`
+  valueBox(value, " Particle Pollution Grade",
+           icon = "ion-fireball",
+           color = particle_pal(value))
+})
+```
+
+### Ozone Grade
+
+```{r}
+renderValueBox({
+  value <- county2_df()$`Ozone Grade`
+  valueBox(value, " Ozone Grade",
+           icon = "ion-fireball",
+           color = ozone_pal(value))
+})
+```
+
+### Annual Pass/Fail
+
+```{r}
+renderValueBox({
+  value <- county2_df()$`Annual Pass/Fail`
+  valueBox(value, " Annual Pass/Fail Grade",
+           icon = "ion-fireball",
+           color = passfail_pal(value))
+})
+```
+
+
+### Average house price
+
+```{r}
+renderGauge({
+  rate <- county2_df()$median_house_value
+  gauge(
+    rate, 
+    min = 0, max = max_house_price, 
+    symbol = '$', 
+    gaugeSectors(
+      success = c(0, max_house_price * 0.25), 
+      warning = c(max_house_price * 0.25, max_house_price * 0.75), 
+      danger = c(max_house_price * 0.75, max_house_price)
+  ))
+})
+```
+
+### Average rent
+
+```{r}
+renderGauge({
+  rate <- county2_df()$median_rent
+  gauge(
+    rate, 
+    min = 0, max = max_rent, 
+    symbol = '$', 
+    gaugeSectors(
+      success = c(0, max_rent * 0.25), 
+      warning = c(max_rent * 0.25, max_rent * 0.75), 
+      danger = c(max_rent * 0.75, max_rent)
+  ))
 })
 ```
 
@@ -272,7 +410,7 @@ Inputs {.sidebar}
 
 ```{r}
 selectInput("datatable_state", "Choose a state:",
-      full_data$state_name
+      sort(unique(full_data$state_name))
     )
 ```
 
@@ -286,6 +424,15 @@ selectInput("datatable_state", "Choose a state:",
 DT::renderDataTable({
   full_data %>%
     filter(state_name == input$datatable_state )%>%
+    # select(
+    #   County = county_name,
+    #   State = state_name,
+    #   `Avg. house price` = median_house_price,
+    #   `Avg. rent` = median_rent,
+    #   `Particle Pollution Grade`,
+    #   `Ozone Grade`,
+    #   `Annual Pass/Fail`
+    #   ) %>%
     datatable()
 })
 ```
