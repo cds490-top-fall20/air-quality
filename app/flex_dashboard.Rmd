@@ -1,12 +1,14 @@
 ---
-title: "App Name Here"
-output: 
+title: "Air Aware"
+output:
   flexdashboard::flex_dashboard:
     orientation: rows
     vertical_layout: fill
-    source_code: "https://github.com/cds490-top-fall20/air-quality"
+    source_code: https://github.com/cds490-top-fall20/air-quality
     theme: cerulean
 runtime: shiny
+resource_files:
+- .Renviron
 ---
 
 ```{r global, include=FALSE}
@@ -45,6 +47,7 @@ full_data <- read_rds("data/counties_mapping_data_simplified.rds") %>%
   )
 metros <- read_rds("data/urban_areas_simplified.rds")
 state_coords <- read_csv("data/state_coords.csv")
+thunder_apikey <- Sys.getenv("THUNDER_API")
 ```
 
 
@@ -100,6 +103,7 @@ Air quality grades are sourced from the National Lung Association's [State of th
 Note: many counties do not have air quality sensors, and lack a grade.
 
 
+
 Row 1 {data-height=650}
 -----------------------------------------------------------------------
 
@@ -113,17 +117,31 @@ output$sotaMap <- renderLeaflet(
 
     leaflet(map_data()) %>% 
       setView(-98.585522, 39.8333333, 4) %>%
-      addProviderTiles("Esri.WorldGrayCanvas") %>%
+      # Base Groups
+      addProviderTiles("Esri.WorldGrayCanvas", group = "Default map") %>%
+      addProviderTiles(providers$Esri.WorldImagery, group = "Satellite") %>%
+      addProviderTiles("Esri.WorldGrayCanvas", group = "Railways") %>%
+      addProviderTiles(providers$OpenRailwayMap, group = "Railways") %>%
+      addProviderTiles(
+        providers$Thunderforest.Transport, 
+        group = "Public transit routes", 
+        options = providerTileOptions(apikey = thunder_apikey)
+        ) %>%
+      addProviderTiles(
+        providers$Thunderforest.OpenCycleMap, 
+        group = "Bike routes", 
+        options = providerTileOptions(apikey = thunder_apikey)
+        ) %>%
       addMapPane("metro_areas", zIndex = 400) %>%
       addMapPane("pollution_counties", zIndex = 420) %>%
       addPolygons(
         data = metros,
         color = "black",
         fillColor = "light grey",
-        group = "Metro Areas",
+        group = "Show urban areas",
         options = pathOptions(pane = "metro_areas")
       ) %>%
-      hideGroup("Metro Areas") %>%
+      hideGroup("Show urban areas") %>%
       addPolygons(
         # data = shape,
         label = ~county_name,
@@ -135,8 +153,8 @@ output$sotaMap <- renderLeaflet(
         dashArray = "3",
         fillOpacity = 0.5,
         popup = paste(
-          "County:", full_data$county_name,"<br>",
-          "Selected Grade:", full_data[[input$Grade]] ,"<br>"
+          "County:", map_data()$county_name,"<br>",
+          "Selected Grade:", map_data()[[input$Grade]] ,"<br>"
           ),
         highlight = highlightOptions(
           weight = 5,
@@ -158,11 +176,17 @@ output$sotaMap <- renderLeaflet(
         lat = ~metros$lat,
         label = ~metros$name,
         labelOptions = labelOptions(noHide = T, direction = 'center', textOnly = T),
-        group = "Metro Areas",
+        group = "Show urban areas",
         options = pathOptions(pane = "metro_areas")
         ) %>%
+      # addLayersControl(
+      #   overlayGroups = c("Metro Areas"),
+      #   options = layersControlOptions(collapsed = FALSE)
+      # ) %>%
       addLayersControl(
-        overlayGroups = c("Metro Areas"),
+        # baseGroups = c("OSM (default)", "Highways", "Sattelite View", "Topography","RailWays","Known Cycling Paths"),
+        baseGroups = c("Default map", "Satellite", "Railways", "Public transit routes", "Bike routes"),
+        overlayGroups = c("Show urban areas"),
         options = layersControlOptions(collapsed = FALSE)
       )
     }
@@ -193,7 +217,9 @@ clicked_county <- reactive({
       "<br><b>% of People who commute to other counties:</b>", 
       round(100 * county_stats$commute_out / county_stats$num_residents),
       "<br><b>% of People who commute within county:</b>", 
-      round(100 * county_stats$commute_within / county_stats$num_residents)
+      round(100 * county_stats$commute_within / county_stats$num_residents),
+      
+      "<p>Some counties provide an NA score for the selected grade. This is because they do not yet collect and provide readings on ozone and particle pollution. To get more information on related grades, visit: https://www.stateoftheair.org/</p>"
       ))
   }
   return(HTML("<p>Click on a county to display more information</p>"))
@@ -436,8 +462,4 @@ DT::renderDataTable({
     datatable()
 })
 ```
-
-
-About
-======
 
